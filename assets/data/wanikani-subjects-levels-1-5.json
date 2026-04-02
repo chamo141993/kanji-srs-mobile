@@ -1,0 +1,412 @@
+{
+  "object": "collection",
+  "url": "local://wanikani-subjects-levels-1-5",
+  "pages": {
+    "per_page": 13,
+    "next_url": null,
+    "previous_url": null
+  },
+  "total_count": 13,
+  "data_updated_at": "2026-04-02T00:00:00.000Z",
+  "data": [
+    {
+      "id": 1,
+      "object": "radical",
+      "url": "local://subjects/1",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 1,
+        "slug": "ground",
+        "characters": "一",
+        "document_url": "https://www.wanikani.com/radicals/ground",
+        "lesson_position": 1,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Imagine the horizon as a flat line across the ground.",
+        "meanings": [
+          {
+            "meaning": "Ground",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Floor",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "object": "kanji",
+      "url": "local://subjects/2",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 1,
+        "slug": "one",
+        "characters": "一",
+        "document_url": "https://www.wanikani.com/kanji/%E4%B8%80",
+        "lesson_position": 2,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "A single horizontal stroke is the simplest way to picture one thing.",
+        "reading_mnemonic": "This kanji often uses the onyomi reading いち.",
+        "meanings": [
+          {
+            "meaning": "One",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "いち",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "object": "vocabulary",
+      "url": "local://subjects/3",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 1,
+        "slug": "hitotsu",
+        "characters": "一つ",
+        "document_url": "https://www.wanikani.com/vocabulary/%E4%B8%80%E3%81%A4",
+        "lesson_position": 3,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When counting one general thing, 一つ means one thing.",
+        "reading_mnemonic": "This vocabulary uses the native Japanese reading ひとつ.",
+        "meanings": [
+          {
+            "meaning": "One Thing",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "One",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ひとつ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "object": "radical",
+      "url": "local://subjects/4",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 1,
+        "slug": "stick",
+        "characters": "丨",
+        "document_url": "https://www.wanikani.com/radicals/stick",
+        "lesson_position": 4,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "A single vertical stroke looks just like a stick.",
+        "meanings": [
+          {
+            "meaning": "Stick",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "object": "kanji",
+      "url": "local://subjects/5",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 1,
+        "slug": "two",
+        "characters": "二",
+        "document_url": "https://www.wanikani.com/kanji/%E4%BA%8C",
+        "lesson_position": 5,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Two horizontal lines make it easy to picture two things.",
+        "reading_mnemonic": "The onyomi reading is に.",
+        "meanings": [
+          {
+            "meaning": "Two",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "に",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "object": "radical",
+      "url": "local://subjects/6",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 2,
+        "slug": "mouth-radical",
+        "characters": "口",
+        "document_url": "https://www.wanikani.com/radicals/mouth",
+        "lesson_position": 1,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "This square radical is the shape of an open mouth.",
+        "meanings": [
+          {
+            "meaning": "Mouth",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "object": "kanji",
+      "url": "local://subjects/7",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 2,
+        "slug": "mouth",
+        "characters": "口",
+        "document_url": "https://www.wanikani.com/kanji/%E5%8F%A3",
+        "lesson_position": 2,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "A mouth is drawn like a box opening on your face.",
+        "reading_mnemonic": "The onyomi reading for this kanji is こう.",
+        "meanings": [
+          {
+            "meaning": "Mouth",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "こう",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "object": "kanji",
+      "url": "local://subjects/8",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 3,
+        "slug": "tree",
+        "characters": "木",
+        "document_url": "https://www.wanikani.com/kanji/%E6%9C%A8",
+        "lesson_position": 1,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Branches spread from a trunk, giving this kanji a tree shape.",
+        "reading_mnemonic": "Common readings are き and the onyomi もく.",
+        "meanings": [
+          {
+            "meaning": "Tree",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Wood",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "き",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          },
+          {
+            "reading": "もく",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "onyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "object": "vocabulary",
+      "url": "local://subjects/9",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 3,
+        "slug": "yama",
+        "characters": "山",
+        "document_url": "https://www.wanikani.com/vocabulary/%E5%B1%B1",
+        "lesson_position": 2,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "This vocabulary word names a mountain.",
+        "reading_mnemonic": "Use the native reading やま.",
+        "meanings": [
+          {
+            "meaning": "Mountain",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "やま",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "object": "kanji",
+      "url": "local://subjects/10",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 4,
+        "slug": "fire",
+        "characters": "火",
+        "document_url": "https://www.wanikani.com/kanji/%E7%81%AB",
+        "lesson_position": 1,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Flames spread outward from the center in this fiery shape.",
+        "reading_mnemonic": "The onyomi reading is か.",
+        "meanings": [
+          {
+            "meaning": "Fire",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "か",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "object": "vocabulary",
+      "url": "local://subjects/11",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 4,
+        "slug": "mizu",
+        "characters": "水",
+        "document_url": "https://www.wanikani.com/vocabulary/%E6%B0%B4",
+        "lesson_position": 2,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "This vocabulary word means water.",
+        "reading_mnemonic": "Use the reading みず.",
+        "meanings": [
+          {
+            "meaning": "Water",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "みず",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "object": "kanji",
+      "url": "local://subjects/12",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 5,
+        "slug": "gold",
+        "characters": "金",
+        "document_url": "https://www.wanikani.com/kanji/%E9%87%91",
+        "lesson_position": 1,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "This kanji represents shiny metal or gold.",
+        "reading_mnemonic": "The common onyomi reading is きん.",
+        "meanings": [
+          {
+            "meaning": "Gold",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Money",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "きん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "object": "vocabulary",
+      "url": "local://subjects/13",
+      "data_updated_at": "2026-04-02T00:00:00.000Z",
+      "data": {
+        "level": 5,
+        "slug": "nihon",
+        "characters": "日本",
+        "document_url": "https://www.wanikani.com/vocabulary/%E6%97%A5%E6%9C%AC",
+        "lesson_position": 2,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "This vocabulary word names Japan.",
+        "reading_mnemonic": "This vocabulary is commonly read にほん.",
+        "meanings": [
+          {
+            "meaning": "Japan",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "にほん",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    }
+  ]
+}
