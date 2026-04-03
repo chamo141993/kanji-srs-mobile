@@ -77,7 +77,7 @@ export default function DashboardScreen() {
         setImportMessage("Bundled WaniKani level 1-5 data is already imported.");
       } else {
         setImportMessage(
-          `Imported ${result.insertedSubjects} subjects and queued ${result.seededReviews} review cards.`
+          `Imported ${result.insertedSubjects} subjects and added ${result.seededReviews} new lessons.`
         );
       }
     } catch (err) {
@@ -87,8 +87,10 @@ export default function DashboardScreen() {
     }
   }, []);
 
+  const pendingLessons = stats?.pendingLessons ?? 0;
   const pendingReviews = stats?.pendingReviews ?? 0;
-  const startDisabled = pendingReviews === 0 || isLoading;
+  const lessonDisabled = pendingLessons === 0 || isLoading;
+  const reviewDisabled = pendingReviews === 0 || isLoading;
 
   if (isLoading && !stats) {
     return (
@@ -120,12 +122,10 @@ export default function DashboardScreen() {
               Kanji SRS
             </Text>
 
-            <Text className="mt-3 text-4xl font-bold text-white">
-              Welcome back
-            </Text>
+            <Text className="mt-3 text-4xl font-bold text-white">Welcome back</Text>
 
             <Text className="mt-2 text-base text-slate-300">
-              Ready for a quick review session?
+              Ready for a quick study session?
             </Text>
 
             <View className="mt-8 rounded-3xl bg-slate-800 p-6">
@@ -139,63 +139,39 @@ export default function DashboardScreen() {
 
             <View className="mt-5 rounded-3xl bg-slate-800 p-6">
               <Text className="text-xs font-semibold uppercase tracking-[3px] text-slate-400">
-                Pending Reviews
+                Available Lessons
               </Text>
-              <Text className="mt-2 text-5xl font-bold text-white">
-                {pendingReviews}
-              </Text>
+              <Text className="mt-2 text-5xl font-bold text-white">{pendingLessons}</Text>
             </View>
+
+            <TouchableOpacity
+              onPress={() => router.push("/lesson")}
+              disabled={lessonDisabled}
+              activeOpacity={0.85}
+              className={`mt-5 rounded-3xl px-5 py-5 ${
+                lessonDisabled ? "bg-slate-600" : "bg-indigo-500"
+              }`}
+            >
+              <Text className="text-center text-lg font-bold uppercase tracking-[2px] text-white">
+                {pendingLessons > 0
+                  ? `Start Lessons (${pendingLessons})`
+                  : "No Lessons Available"}
+              </Text>
+            </TouchableOpacity>
 
             <View className="mt-5 rounded-3xl bg-slate-800 p-6">
               <Text className="text-xs font-semibold uppercase tracking-[3px] text-slate-400">
-                SRS Breakdown
+                Pending Reviews
               </Text>
-
-              <View className="mt-4 gap-3">
-                <View className="flex-row items-center justify-between rounded-2xl bg-slate-700/50 px-4 py-3">
-                  <Text className="text-base font-semibold text-white">
-                    Apprentice
-                  </Text>
-                  <Text className="text-base font-bold text-sky-300">
-                    {stats?.stageBreakdown.apprentice ?? 0}
-                  </Text>
-                </View>
-
-                <View className="flex-row items-center justify-between rounded-2xl bg-slate-700/50 px-4 py-3">
-                  <Text className="text-base font-semibold text-white">
-                    Guru
-                  </Text>
-                  <Text className="text-base font-bold text-violet-300">
-                    {stats?.stageBreakdown.guru ?? 0}
-                  </Text>
-                </View>
-
-                <View className="flex-row items-center justify-between rounded-2xl bg-slate-700/50 px-4 py-3">
-                  <Text className="text-base font-semibold text-white">
-                    Master
-                  </Text>
-                  <Text className="text-base font-bold text-amber-300">
-                    {stats?.stageBreakdown.master ?? 0}
-                  </Text>
-                </View>
-
-                <View className="flex-row items-center justify-between rounded-2xl bg-slate-700/50 px-4 py-3">
-                  <Text className="text-base font-semibold text-white">
-                    Enlightened
-                  </Text>
-                  <Text className="text-base font-bold text-emerald-300">
-                    {stats?.stageBreakdown.enlightened ?? 0}
-                  </Text>
-                </View>
-              </View>
+              <Text className="mt-2 text-5xl font-bold text-white">{pendingReviews}</Text>
             </View>
 
             <TouchableOpacity
               onPress={() => router.push("/review")}
-              disabled={startDisabled}
+              disabled={reviewDisabled}
               activeOpacity={0.85}
-              className={`mt-8 rounded-3xl px-5 py-5 ${
-                startDisabled ? "bg-slate-600" : "bg-pink-500"
+              className={`mt-5 rounded-3xl px-5 py-5 ${
+                reviewDisabled ? "bg-slate-600" : "bg-pink-500"
               }`}
             >
               <Text className="text-center text-lg font-bold uppercase tracking-[2px] text-white">
@@ -204,6 +180,42 @@ export default function DashboardScreen() {
                   : "No Reviews Available"}
               </Text>
             </TouchableOpacity>
+
+            <View className="mt-5 rounded-3xl bg-slate-800 p-6">
+              <Text className="text-xs font-semibold uppercase tracking-[3px] text-slate-400">
+                SRS Breakdown
+              </Text>
+
+              <View className="mt-4 gap-3">
+                <View className="flex-row items-center justify-between rounded-2xl bg-slate-700/50 px-4 py-3">
+                  <Text className="text-base font-semibold text-white">Apprentice</Text>
+                  <Text className="text-base font-bold text-sky-300">
+                    {stats?.stageBreakdown.apprentice ?? 0}
+                  </Text>
+                </View>
+
+                <View className="flex-row items-center justify-between rounded-2xl bg-slate-700/50 px-4 py-3">
+                  <Text className="text-base font-semibold text-white">Guru</Text>
+                  <Text className="text-base font-bold text-violet-300">
+                    {stats?.stageBreakdown.guru ?? 0}
+                  </Text>
+                </View>
+
+                <View className="flex-row items-center justify-between rounded-2xl bg-slate-700/50 px-4 py-3">
+                  <Text className="text-base font-semibold text-white">Master</Text>
+                  <Text className="text-base font-bold text-amber-300">
+                    {stats?.stageBreakdown.master ?? 0}
+                  </Text>
+                </View>
+
+                <View className="flex-row items-center justify-between rounded-2xl bg-slate-700/50 px-4 py-3">
+                  <Text className="text-base font-semibold text-white">Enlightened</Text>
+                  <Text className="text-base font-bold text-emerald-300">
+                    {stats?.stageBreakdown.enlightened ?? 0}
+                  </Text>
+                </View>
+              </View>
+            </View>
 
             {error ? (
               <View className="mt-4 rounded-2xl bg-red-50 px-4 py-3">
