@@ -572,43 +572,39 @@ export async function importSubjectsFromJson(
   let insertedSubjects = 0;
   let seededReviews = 0;
 
-  const insertSubjectStatement = await db.prepareAsync(`
-    INSERT OR IGNORE INTO subjects (
-      id,
-      type,
-      level,
-      slug,
-      characters,
-      meanings_json,
-      readings_json,
-      meaning_mnemonic,
-      reading_mnemonic,
-      created_at,
-      updated_at
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-  `);
+  await db.withTransactionAsync(async () => {
+    await db.runAsync(
+      `
+        INSERT OR IGNORE INTO users (
+          id,
+          email,
+          username,
+          current_level,
+          created_at,
+          updated_at
+        ) VALUES (?, ?, ?, ?, ?, ?)
+      `,
+      [userId, `${userId}@device`, userId, 1, now, now]
+    );
 
-  const insertReviewStatement = await db.prepareAsync(`
-    INSERT OR IGNORE INTO review_statistics (
-      user_id,
-      subject_id,
-      lesson_completed,
-      srs_stage,
-      next_review_at,
-      last_reviewed_at,
-      lesson_started_at,
-      review_count,
-      correct_count,
-      wrong_count,
-      created_at,
-      updated_at
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-  `);
-
-  try {
-    await db.withTransactionAsync(async () => {
-      for (const subject of normalizedSubjects) {
-        const subjectResult = await insertSubjectStatement.executeAsync([
+    for (const subject of normalizedSubjects) {
+      const subjectResult = await db.runAsync(
+        `
+          INSERT OR IGNORE INTO subjects (
+            id,
+            type,
+            level,
+            slug,
+            characters,
+            meanings_json,
+            readings_json,
+            meaning_mnemonic,
+            reading_mnemonic,
+            created_at,
+            updated_at
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        `,
+        [
           subject.id,
           subject.type,
           subject.level,
@@ -620,10 +616,37 @@ export async function importSubjectsFromJson(
           subject.readingMnemonic,
           now,
           now,
-        ]);
-        insertedSubjects += subjectResult.changes;
+        ]
+      );
+      insertedSubjects += subjectResult.changes;
 
-        const reviewResult = await insertReviewStatement.executeAsync([
+      const subjectExists = await db.getFirstAsync<SubjectIdRow>(
+        `SELECT id FROM subjects WHERE id = ? LIMIT 1`,
+        [subject.id]
+      );
+
+      if (!subjectExists) {
+        continue;
+      }
+
+      const reviewResult = await db.runAsync(
+        `
+          INSERT OR IGNORE INTO review_statistics (
+            user_id,
+            subject_id,
+            lesson_completed,
+            srs_stage,
+            next_review_at,
+            last_reviewed_at,
+            lesson_started_at,
+            review_count,
+            correct_count,
+            wrong_count,
+            created_at,
+            updated_at
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        `,
+        [
           userId,
           subject.id,
           0,
@@ -636,14 +659,11 @@ export async function importSubjectsFromJson(
           0,
           now,
           now,
-        ]);
-        seededReviews += reviewResult.changes;
-      }
-    });
-  } finally {
-    await insertSubjectStatement.finalizeAsync();
-    await insertReviewStatement.finalizeAsync();
-  }
+        ]
+      );
+      seededReviews += reviewResult.changes;
+    }
+  });
 
   return {
     insertedSubjects,

@@ -16,7 +16,7 @@ import {
   type DashboardStats,
 } from "../lib/db";
 
-const BUNDLED_WANIKANI_SUBJECTS = require("../../assets/data/wanikani-subjects-levels-1-5.json");
+const BUNDLED_WANIKANI_SUBJECTS = require("../../assets/data/wanikani-massive-dump.json");
 
 export default function DashboardScreen() {
   const router = useRouter();
@@ -74,7 +74,7 @@ export default function DashboardScreen() {
       setStats(nextStats);
 
       if (result.insertedSubjects === 0) {
-        setImportMessage("Bundled WaniKani level 1-5 data is already imported.");
+        setImportMessage("Bundled WaniKani massive level 1-5 data is already imported.");
       } else {
         setImportMessage(
           `Imported ${result.insertedSubjects} subjects and added ${result.seededReviews} new lessons.`
@@ -240,7 +240,7 @@ export default function DashboardScreen() {
               }`}
             >
               <Text className="text-center text-sm font-bold uppercase tracking-[2px] text-white">
-                {isImporting ? "Importing..." : "Import Level 1-5 JSON"}
+                {isImporting ? "Importing..." : "Import Massive Level 1-5 JSON"}
               </Text>
             </TouchableOpacity>
 

@@ -1,0 +1,5022 @@
+{
+  "object": "collection",
+  "url": "local://wanikani-massive-dump",
+  "pages": {
+    "per_page": 150,
+    "next_url": null,
+    "previous_url": null
+  },
+  "total_count": 150,
+  "data_updated_at": "2026-04-03T21:29:25.096Z",
+  "data": [
+    {
+      "id": 1,
+      "object": "radical",
+      "url": "local://subjects/1",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "ground",
+        "characters": "一",
+        "document_url": "https://www.wanikani.com/radicals/ground",
+        "lesson_position": 1,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 一 as a ground. That simple image makes the radical meaning \"ground\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Ground",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Floor",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "object": "radical",
+      "url": "local://subjects/2",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "stick",
+        "characters": "丨",
+        "document_url": "https://www.wanikani.com/radicals/stick",
+        "lesson_position": 2,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 丨 as a stick. That simple image makes the radical meaning \"stick\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Stick",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Pole",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "object": "radical",
+      "url": "local://subjects/3",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "drop",
+        "characters": "丶",
+        "document_url": "https://www.wanikani.com/radicals/drop",
+        "lesson_position": 3,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 丶 as a drop. That simple image makes the radical meaning \"drop\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Drop",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Dot",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "object": "radical",
+      "url": "local://subjects/4",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "hook",
+        "characters": "亅",
+        "document_url": "https://www.wanikani.com/radicals/hook",
+        "lesson_position": 4,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 亅 as a hook. That simple image makes the radical meaning \"hook\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Hook",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Barb",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "object": "radical",
+      "url": "local://subjects/5",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "box",
+        "characters": "口",
+        "document_url": "https://www.wanikani.com/radicals/box",
+        "lesson_position": 5,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 口 as a box. That simple image makes the radical meaning \"box\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Box",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Square",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "object": "radical",
+      "url": "local://subjects/6",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "person",
+        "characters": "人",
+        "document_url": "https://www.wanikani.com/radicals/person",
+        "lesson_position": 6,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 人 as a person. That simple image makes the radical meaning \"person\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Person",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Human",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "object": "radical",
+      "url": "local://subjects/7",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "tree",
+        "characters": "木",
+        "document_url": "https://www.wanikani.com/radicals/tree",
+        "lesson_position": 7,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 木 as a tree. That simple image makes the radical meaning \"tree\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Tree",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Wood",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "object": "radical",
+      "url": "local://subjects/8",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "sun",
+        "characters": "日",
+        "document_url": "https://www.wanikani.com/radicals/sun",
+        "lesson_position": 8,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 日 as a sun. That simple image makes the radical meaning \"sun\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Sun",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Day",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "object": "radical",
+      "url": "local://subjects/9",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "moon",
+        "characters": "月",
+        "document_url": "https://www.wanikani.com/radicals/moon",
+        "lesson_position": 9,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 月 as a moon. That simple image makes the radical meaning \"moon\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Moon",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Month",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "object": "radical",
+      "url": "local://subjects/10",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "mountain",
+        "characters": "山",
+        "document_url": "https://www.wanikani.com/radicals/mountain",
+        "lesson_position": 10,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 山 as a mountain. That simple image makes the radical meaning \"mountain\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Mountain",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Peak",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "object": "kanji",
+      "url": "local://subjects/11",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "one",
+        "characters": "一",
+        "document_url": "https://www.wanikani.com/kanjis/%E4%B8%80",
+        "lesson_position": 11,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"one\" tied to the shape 一. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading いち. It is the main onyomi reading to remember first for 一.",
+        "meanings": [
+          {
+            "meaning": "One",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Single",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "いち",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "ひと",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "object": "kanji",
+      "url": "local://subjects/12",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "two",
+        "characters": "二",
+        "document_url": "https://www.wanikani.com/kanjis/%E4%BA%8C",
+        "lesson_position": 12,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"two\" tied to the shape 二. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading に. It is the main onyomi reading to remember first for 二.",
+        "meanings": [
+          {
+            "meaning": "Two",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Double",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "に",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "object": "kanji",
+      "url": "local://subjects/13",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "three",
+        "characters": "三",
+        "document_url": "https://www.wanikani.com/kanjis/%E4%B8%89",
+        "lesson_position": 13,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"three\" tied to the shape 三. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading さん. It is the main onyomi reading to remember first for 三.",
+        "meanings": [
+          {
+            "meaning": "Three",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Triple",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "さん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "object": "kanji",
+      "url": "local://subjects/14",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "person",
+        "characters": "人",
+        "document_url": "https://www.wanikani.com/kanjis/%E4%BA%BA",
+        "lesson_position": 14,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"person\" tied to the shape 人. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading じん. It is the main onyomi reading to remember first for 人.",
+        "meanings": [
+          {
+            "meaning": "Person",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Human",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "じん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "ひと",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "object": "kanji",
+      "url": "local://subjects/15",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "mouth",
+        "characters": "口",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%8F%A3",
+        "lesson_position": 15,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"mouth\" tied to the shape 口. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading こう. It is the main onyomi reading to remember first for 口.",
+        "meanings": [
+          {
+            "meaning": "Mouth",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Opening",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "こう",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "くち",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "object": "kanji",
+      "url": "local://subjects/16",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "sun",
+        "characters": "日",
+        "document_url": "https://www.wanikani.com/kanjis/%E6%97%A5",
+        "lesson_position": 16,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"sun\" tied to the shape 日. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading にち. It is the main onyomi reading to remember first for 日.",
+        "meanings": [
+          {
+            "meaning": "Sun",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Day",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "にち",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "ひ",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "object": "kanji",
+      "url": "local://subjects/17",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "moon",
+        "characters": "月",
+        "document_url": "https://www.wanikani.com/kanjis/%E6%9C%88",
+        "lesson_position": 17,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"moon\" tied to the shape 月. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading げつ. It is the main onyomi reading to remember first for 月.",
+        "meanings": [
+          {
+            "meaning": "Moon",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Month",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "げつ",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "つき",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "object": "kanji",
+      "url": "local://subjects/18",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "mountain",
+        "characters": "山",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%B1%B1",
+        "lesson_position": 18,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"mountain\" tied to the shape 山. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading さん. It is the main onyomi reading to remember first for 山.",
+        "meanings": [
+          {
+            "meaning": "Mountain",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Hill",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "さん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "やま",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "object": "kanji",
+      "url": "local://subjects/19",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "river",
+        "characters": "川",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%B7%9D",
+        "lesson_position": 19,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"river\" tied to the shape 川. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading せん. It is the main onyomi reading to remember first for 川.",
+        "meanings": [
+          {
+            "meaning": "River",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Stream",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "せん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "かわ",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "object": "kanji",
+      "url": "local://subjects/20",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "tree",
+        "characters": "木",
+        "document_url": "https://www.wanikani.com/kanjis/%E6%9C%A8",
+        "lesson_position": 20,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"tree\" tied to the shape 木. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading もく. It is the main onyomi reading to remember first for 木.",
+        "meanings": [
+          {
+            "meaning": "Tree",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Wood",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "もく",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "き",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "object": "vocabulary",
+      "url": "local://subjects/21",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "hitotsu",
+        "characters": "一つ",
+        "document_url": "https://www.wanikani.com/vocabularys/%E4%B8%80%E3%81%A4",
+        "lesson_position": 21,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 一つ, think \"one thing\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as ひとつ. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "One Thing",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "One",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ひとつ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "object": "vocabulary",
+      "url": "local://subjects/22",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "futatsu",
+        "characters": "二つ",
+        "document_url": "https://www.wanikani.com/vocabularys/%E4%BA%8C%E3%81%A4",
+        "lesson_position": 22,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 二つ, think \"two things\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as ふたつ. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Two Things",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Two",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ふたつ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "object": "vocabulary",
+      "url": "local://subjects/23",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "mittsu",
+        "characters": "三つ",
+        "document_url": "https://www.wanikani.com/vocabularys/%E4%B8%89%E3%81%A4",
+        "lesson_position": 23,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 三つ, think \"three things\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as みっつ. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Three Things",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Three",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "みっつ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "object": "vocabulary",
+      "url": "local://subjects/24",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "hito",
+        "characters": "人",
+        "document_url": "https://www.wanikani.com/vocabularys/%E4%BA%BA",
+        "lesson_position": 24,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 人, think \"person\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as ひと. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Person",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ひと",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "object": "vocabulary",
+      "url": "local://subjects/25",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "kuchi",
+        "characters": "口",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%8F%A3",
+        "lesson_position": 25,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 口, think \"mouth\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as くち. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Mouth",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "くち",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "object": "vocabulary",
+      "url": "local://subjects/26",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "hi",
+        "characters": "日",
+        "document_url": "https://www.wanikani.com/vocabularys/%E6%97%A5",
+        "lesson_position": 26,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 日, think \"day\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as ひ. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Day",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Sun",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ひ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "object": "vocabulary",
+      "url": "local://subjects/27",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "tsuki",
+        "characters": "月",
+        "document_url": "https://www.wanikani.com/vocabularys/%E6%9C%88",
+        "lesson_position": 27,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 月, think \"moon\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as つき. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Moon",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Month",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "つき",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "object": "vocabulary",
+      "url": "local://subjects/28",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "yama",
+        "characters": "山",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%B1%B1",
+        "lesson_position": 28,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 山, think \"mountain\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as やま. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Mountain",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "やま",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "object": "vocabulary",
+      "url": "local://subjects/29",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "kawa",
+        "characters": "川",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%B7%9D",
+        "lesson_position": 29,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 川, think \"river\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as かわ. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "River",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "かわ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "object": "vocabulary",
+      "url": "local://subjects/30",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 1,
+        "slug": "ki",
+        "characters": "木",
+        "document_url": "https://www.wanikani.com/vocabularys/%E6%9C%A8",
+        "lesson_position": 30,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 木, think \"tree\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as き. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Tree",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Wood",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "き",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "object": "radical",
+      "url": "local://subjects/31",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "woman",
+        "characters": "女",
+        "document_url": "https://www.wanikani.com/radicals/woman",
+        "lesson_position": 31,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 女 as a woman. That simple image makes the radical meaning \"woman\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Woman",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Female",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "object": "radical",
+      "url": "local://subjects/32",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "child",
+        "characters": "子",
+        "document_url": "https://www.wanikani.com/radicals/child",
+        "lesson_position": 32,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 子 as a child. That simple image makes the radical meaning \"child\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Child",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Kid",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "object": "radical",
+      "url": "local://subjects/33",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "hand",
+        "characters": "手",
+        "document_url": "https://www.wanikani.com/radicals/hand",
+        "lesson_position": 33,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 手 as a hand. That simple image makes the radical meaning \"hand\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Hand",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Palm",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "object": "radical",
+      "url": "local://subjects/34",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "water",
+        "characters": "水",
+        "document_url": "https://www.wanikani.com/radicals/water",
+        "lesson_position": 34,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 水 as a water. That simple image makes the radical meaning \"water\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Water",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Liquid",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "object": "radical",
+      "url": "local://subjects/35",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "fire",
+        "characters": "火",
+        "document_url": "https://www.wanikani.com/radicals/fire",
+        "lesson_position": 35,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 火 as a fire. That simple image makes the radical meaning \"fire\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Fire",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Flame",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "object": "radical",
+      "url": "local://subjects/36",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "thread",
+        "characters": "糸",
+        "document_url": "https://www.wanikani.com/radicals/thread",
+        "lesson_position": 36,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 糸 as a thread. That simple image makes the radical meaning \"thread\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Thread",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "String",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "object": "radical",
+      "url": "local://subjects/37",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "shell",
+        "characters": "貝",
+        "document_url": "https://www.wanikani.com/radicals/shell",
+        "lesson_position": 37,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 貝 as a shell. That simple image makes the radical meaning \"shell\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Shell",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Clam",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "object": "radical",
+      "url": "local://subjects/38",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "vehicle",
+        "characters": "車",
+        "document_url": "https://www.wanikani.com/radicals/vehicle",
+        "lesson_position": 38,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 車 as a vehicle. That simple image makes the radical meaning \"vehicle\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Vehicle",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Car",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "object": "radical",
+      "url": "local://subjects/39",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "heart",
+        "characters": "心",
+        "document_url": "https://www.wanikani.com/radicals/heart",
+        "lesson_position": 39,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 心 as a heart. That simple image makes the radical meaning \"heart\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Heart",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Mind",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "object": "radical",
+      "url": "local://subjects/40",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "speech",
+        "characters": "言",
+        "document_url": "https://www.wanikani.com/radicals/speech",
+        "lesson_position": 40,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 言 as a speech. That simple image makes the radical meaning \"speech\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Speech",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Say",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "object": "kanji",
+      "url": "local://subjects/41",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "woman",
+        "characters": "女",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%A5%B3",
+        "lesson_position": 41,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"woman\" tied to the shape 女. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading じょ. It is the main onyomi reading to remember first for 女.",
+        "meanings": [
+          {
+            "meaning": "Woman",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Female",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "じょ",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "おんな",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "object": "kanji",
+      "url": "local://subjects/42",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "child",
+        "characters": "子",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%AD%90",
+        "lesson_position": 42,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"child\" tied to the shape 子. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading し. It is the main onyomi reading to remember first for 子.",
+        "meanings": [
+          {
+            "meaning": "Child",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Kid",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "し",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "こ",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "object": "kanji",
+      "url": "local://subjects/43",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "hand",
+        "characters": "手",
+        "document_url": "https://www.wanikani.com/kanjis/%E6%89%8B",
+        "lesson_position": 43,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"hand\" tied to the shape 手. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading しゅ. It is the main onyomi reading to remember first for 手.",
+        "meanings": [
+          {
+            "meaning": "Hand",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Skill",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "しゅ",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "て",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "object": "kanji",
+      "url": "local://subjects/44",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "water",
+        "characters": "水",
+        "document_url": "https://www.wanikani.com/kanjis/%E6%B0%B4",
+        "lesson_position": 44,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"water\" tied to the shape 水. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading すい. It is the main onyomi reading to remember first for 水.",
+        "meanings": [
+          {
+            "meaning": "Water",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Liquid",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "すい",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "みず",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "object": "kanji",
+      "url": "local://subjects/45",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "fire",
+        "characters": "火",
+        "document_url": "https://www.wanikani.com/kanjis/%E7%81%AB",
+        "lesson_position": 45,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"fire\" tied to the shape 火. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading か. It is the main onyomi reading to remember first for 火.",
+        "meanings": [
+          {
+            "meaning": "Fire",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Flame",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "か",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "ひ",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "object": "kanji",
+      "url": "local://subjects/46",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "dog",
+        "characters": "犬",
+        "document_url": "https://www.wanikani.com/kanjis/%E7%8A%AC",
+        "lesson_position": 46,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"dog\" tied to the shape 犬. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading けん. It is the main onyomi reading to remember first for 犬.",
+        "meanings": [
+          {
+            "meaning": "Dog",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Hound",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "けん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "いぬ",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "object": "kanji",
+      "url": "local://subjects/47",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "eye",
+        "characters": "目",
+        "document_url": "https://www.wanikani.com/kanjis/%E7%9B%AE",
+        "lesson_position": 47,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"eye\" tied to the shape 目. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading もく. It is the main onyomi reading to remember first for 目.",
+        "meanings": [
+          {
+            "meaning": "Eye",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Vision",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "もく",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "め",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "object": "kanji",
+      "url": "local://subjects/48",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "ear",
+        "characters": "耳",
+        "document_url": "https://www.wanikani.com/kanjis/%E8%80%B3",
+        "lesson_position": 48,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"ear\" tied to the shape 耳. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading じ. It is the main onyomi reading to remember first for 耳.",
+        "meanings": [
+          {
+            "meaning": "Ear",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Hearing",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "じ",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "みみ",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "object": "kanji",
+      "url": "local://subjects/49",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "foot",
+        "characters": "足",
+        "document_url": "https://www.wanikani.com/kanjis/%E8%B6%B3",
+        "lesson_position": 49,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"foot\" tied to the shape 足. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading そく. It is the main onyomi reading to remember first for 足.",
+        "meanings": [
+          {
+            "meaning": "Foot",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Leg",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "そく",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "あし",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 50,
+      "object": "kanji",
+      "url": "local://subjects/50",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "power",
+        "characters": "力",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%8A%9B",
+        "lesson_position": 50,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"power\" tied to the shape 力. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading りょく. It is the main onyomi reading to remember first for 力.",
+        "meanings": [
+          {
+            "meaning": "Power",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Strength",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "りょく",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "ちから",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 51,
+      "object": "vocabulary",
+      "url": "local://subjects/51",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "onna",
+        "characters": "女",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%A5%B3",
+        "lesson_position": 51,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 女, think \"woman\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as おんな. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Woman",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "おんな",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 52,
+      "object": "vocabulary",
+      "url": "local://subjects/52",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "kodomo",
+        "characters": "子ども",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%AD%90%E3%81%A9%E3%82%82",
+        "lesson_position": 52,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 子ども, think \"child\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as こども. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Child",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "こども",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 53,
+      "object": "vocabulary",
+      "url": "local://subjects/53",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "te",
+        "characters": "手",
+        "document_url": "https://www.wanikani.com/vocabularys/%E6%89%8B",
+        "lesson_position": 53,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 手, think \"hand\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as て. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Hand",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "て",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 54,
+      "object": "vocabulary",
+      "url": "local://subjects/54",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "mizu",
+        "characters": "水",
+        "document_url": "https://www.wanikani.com/vocabularys/%E6%B0%B4",
+        "lesson_position": 54,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 水, think \"water\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as みず. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Water",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "みず",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 55,
+      "object": "vocabulary",
+      "url": "local://subjects/55",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "hi",
+        "characters": "火",
+        "document_url": "https://www.wanikani.com/vocabularys/%E7%81%AB",
+        "lesson_position": 55,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 火, think \"fire\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as ひ. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Fire",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ひ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 56,
+      "object": "vocabulary",
+      "url": "local://subjects/56",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "inu",
+        "characters": "犬",
+        "document_url": "https://www.wanikani.com/vocabularys/%E7%8A%AC",
+        "lesson_position": 56,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 犬, think \"dog\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as いぬ. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Dog",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "いぬ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 57,
+      "object": "vocabulary",
+      "url": "local://subjects/57",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "me",
+        "characters": "目",
+        "document_url": "https://www.wanikani.com/vocabularys/%E7%9B%AE",
+        "lesson_position": 57,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 目, think \"eye\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as め. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Eye",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "め",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 58,
+      "object": "vocabulary",
+      "url": "local://subjects/58",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "mimi",
+        "characters": "耳",
+        "document_url": "https://www.wanikani.com/vocabularys/%E8%80%B3",
+        "lesson_position": 58,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 耳, think \"ear\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as みみ. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Ear",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "みみ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 59,
+      "object": "vocabulary",
+      "url": "local://subjects/59",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "ashi",
+        "characters": "足",
+        "document_url": "https://www.wanikani.com/vocabularys/%E8%B6%B3",
+        "lesson_position": 59,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 足, think \"foot\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as あし. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Foot",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "あし",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 60,
+      "object": "vocabulary",
+      "url": "local://subjects/60",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 2,
+        "slug": "chikara",
+        "characters": "力",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%8A%9B",
+        "lesson_position": 60,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 力, think \"strength\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as ちから. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Strength",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Power",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ちから",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 61,
+      "object": "radical",
+      "url": "local://subjects/61",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "soil",
+        "characters": "土",
+        "document_url": "https://www.wanikani.com/radicals/soil",
+        "lesson_position": 61,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 土 as a soil. That simple image makes the radical meaning \"soil\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Soil",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Earth",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 62,
+      "object": "radical",
+      "url": "local://subjects/62",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "rice-field",
+        "characters": "田",
+        "document_url": "https://www.wanikani.com/radicals/rice-field",
+        "lesson_position": 62,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 田 as a rice field. That simple image makes the radical meaning \"rice field\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Rice Field",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Field",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 63,
+      "object": "radical",
+      "url": "local://subjects/63",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "stone",
+        "characters": "石",
+        "document_url": "https://www.wanikani.com/radicals/stone",
+        "lesson_position": 63,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 石 as a stone. That simple image makes the radical meaning \"stone\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Stone",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Rock",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 64,
+      "object": "radical",
+      "url": "local://subjects/64",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "bamboo",
+        "characters": "竹",
+        "document_url": "https://www.wanikani.com/radicals/bamboo",
+        "lesson_position": 64,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 竹 as a bamboo. That simple image makes the radical meaning \"bamboo\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Bamboo",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Stalk",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 65,
+      "object": "radical",
+      "url": "local://subjects/65",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "rain",
+        "characters": "雨",
+        "document_url": "https://www.wanikani.com/radicals/rain",
+        "lesson_position": 65,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 雨 as a rain. That simple image makes the radical meaning \"rain\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Rain",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Weather",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 66,
+      "object": "radical",
+      "url": "local://subjects/66",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "gold",
+        "characters": "金",
+        "document_url": "https://www.wanikani.com/radicals/gold",
+        "lesson_position": 66,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 金 as a gold. That simple image makes the radical meaning \"gold\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Gold",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Metal",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 67,
+      "object": "radical",
+      "url": "local://subjects/67",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "gate",
+        "characters": "門",
+        "document_url": "https://www.wanikani.com/radicals/gate",
+        "lesson_position": 67,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 門 as a gate. That simple image makes the radical meaning \"gate\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Gate",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Entrance",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 68,
+      "object": "radical",
+      "url": "local://subjects/68",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "roof",
+        "characters": "宀",
+        "document_url": "https://www.wanikani.com/radicals/roof",
+        "lesson_position": 68,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 宀 as a roof. That simple image makes the radical meaning \"roof\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Roof",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Cover",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 69,
+      "object": "radical",
+      "url": "local://subjects/69",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "cloth",
+        "characters": "巾",
+        "document_url": "https://www.wanikani.com/radicals/cloth",
+        "lesson_position": 69,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 巾 as a cloth. That simple image makes the radical meaning \"cloth\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Cloth",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Fabric",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 70,
+      "object": "radical",
+      "url": "local://subjects/70",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "morning",
+        "characters": "早",
+        "document_url": "https://www.wanikani.com/radicals/morning",
+        "lesson_position": 70,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 早 as a morning. That simple image makes the radical meaning \"morning\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Morning",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Early",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 71,
+      "object": "kanji",
+      "url": "local://subjects/71",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "soil",
+        "characters": "土",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%9C%9F",
+        "lesson_position": 71,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"soil\" tied to the shape 土. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading ど. It is the main onyomi reading to remember first for 土.",
+        "meanings": [
+          {
+            "meaning": "Soil",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Earth",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ど",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "つち",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 72,
+      "object": "kanji",
+      "url": "local://subjects/72",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "rice-field",
+        "characters": "田",
+        "document_url": "https://www.wanikani.com/kanjis/%E7%94%B0",
+        "lesson_position": 72,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"rice field\" tied to the shape 田. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading でん. It is the main onyomi reading to remember first for 田.",
+        "meanings": [
+          {
+            "meaning": "Rice Field",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Field",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "でん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "た",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 73,
+      "object": "kanji",
+      "url": "local://subjects/73",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "stone",
+        "characters": "石",
+        "document_url": "https://www.wanikani.com/kanjis/%E7%9F%B3",
+        "lesson_position": 73,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"stone\" tied to the shape 石. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading せき. It is the main onyomi reading to remember first for 石.",
+        "meanings": [
+          {
+            "meaning": "Stone",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Rock",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "せき",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "いし",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 74,
+      "object": "kanji",
+      "url": "local://subjects/74",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "bamboo",
+        "characters": "竹",
+        "document_url": "https://www.wanikani.com/kanjis/%E7%AB%B9",
+        "lesson_position": 74,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"bamboo\" tied to the shape 竹. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading ちく. It is the main onyomi reading to remember first for 竹.",
+        "meanings": [
+          {
+            "meaning": "Bamboo",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ちく",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "たけ",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 75,
+      "object": "kanji",
+      "url": "local://subjects/75",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "rain",
+        "characters": "雨",
+        "document_url": "https://www.wanikani.com/kanjis/%E9%9B%A8",
+        "lesson_position": 75,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"rain\" tied to the shape 雨. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading う. It is the main onyomi reading to remember first for 雨.",
+        "meanings": [
+          {
+            "meaning": "Rain",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "う",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "あめ",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 76,
+      "object": "kanji",
+      "url": "local://subjects/76",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "gold",
+        "characters": "金",
+        "document_url": "https://www.wanikani.com/kanjis/%E9%87%91",
+        "lesson_position": 76,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"gold\" tied to the shape 金. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading きん. It is the main onyomi reading to remember first for 金.",
+        "meanings": [
+          {
+            "meaning": "Gold",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Money",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "きん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "かね",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 77,
+      "object": "kanji",
+      "url": "local://subjects/77",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "gate",
+        "characters": "門",
+        "document_url": "https://www.wanikani.com/kanjis/%E9%96%80",
+        "lesson_position": 77,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"gate\" tied to the shape 門. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading もん. It is the main onyomi reading to remember first for 門.",
+        "meanings": [
+          {
+            "meaning": "Gate",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Portal",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "もん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 78,
+      "object": "kanji",
+      "url": "local://subjects/78",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "study",
+        "characters": "学",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%AD%A6",
+        "lesson_position": 78,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"study\" tied to the shape 学. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading がく. It is the main onyomi reading to remember first for 学.",
+        "meanings": [
+          {
+            "meaning": "Study",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Learning",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "がく",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "まな",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 79,
+      "object": "kanji",
+      "url": "local://subjects/79",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "school",
+        "characters": "校",
+        "document_url": "https://www.wanikani.com/kanjis/%E6%A0%A1",
+        "lesson_position": 79,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"school\" tied to the shape 校. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading こう. It is the main onyomi reading to remember first for 校.",
+        "meanings": [
+          {
+            "meaning": "School",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Campus",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "こう",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 80,
+      "object": "kanji",
+      "url": "local://subjects/80",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "previous",
+        "characters": "先",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%85%88",
+        "lesson_position": 80,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"previous\" tied to the shape 先. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading せん. It is the main onyomi reading to remember first for 先.",
+        "meanings": [
+          {
+            "meaning": "Previous",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Ahead",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "せん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "さき",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 81,
+      "object": "vocabulary",
+      "url": "local://subjects/81",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "tsuchi",
+        "characters": "土",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%9C%9F",
+        "lesson_position": 81,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 土, think \"soil\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as つち. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Soil",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Earth",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "つち",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 82,
+      "object": "vocabulary",
+      "url": "local://subjects/82",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "ta",
+        "characters": "田",
+        "document_url": "https://www.wanikani.com/vocabularys/%E7%94%B0",
+        "lesson_position": 82,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 田, think \"rice field\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as た. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Rice Field",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "た",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 83,
+      "object": "vocabulary",
+      "url": "local://subjects/83",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "ishi",
+        "characters": "石",
+        "document_url": "https://www.wanikani.com/vocabularys/%E7%9F%B3",
+        "lesson_position": 83,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 石, think \"stone\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as いし. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Stone",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "いし",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 84,
+      "object": "vocabulary",
+      "url": "local://subjects/84",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "take",
+        "characters": "竹",
+        "document_url": "https://www.wanikani.com/vocabularys/%E7%AB%B9",
+        "lesson_position": 84,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 竹, think \"bamboo\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as たけ. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Bamboo",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "たけ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 85,
+      "object": "vocabulary",
+      "url": "local://subjects/85",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "ame",
+        "characters": "雨",
+        "document_url": "https://www.wanikani.com/vocabularys/%E9%9B%A8",
+        "lesson_position": 85,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 雨, think \"rain\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as あめ. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Rain",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "あめ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 86,
+      "object": "vocabulary",
+      "url": "local://subjects/86",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "okane",
+        "characters": "お金",
+        "document_url": "https://www.wanikani.com/vocabularys/%E3%81%8A%E9%87%91",
+        "lesson_position": 86,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see お金, think \"money\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as おかね. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Money",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "おかね",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 87,
+      "object": "vocabulary",
+      "url": "local://subjects/87",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "mon",
+        "characters": "門",
+        "document_url": "https://www.wanikani.com/vocabularys/%E9%96%80",
+        "lesson_position": 87,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 門, think \"gate\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as もん. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Gate",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "もん",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "object": "vocabulary",
+      "url": "local://subjects/88",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "gakkou",
+        "characters": "学校",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%AD%A6%E6%A0%A1",
+        "lesson_position": 88,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 学校, think \"school\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as がっこう. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "School",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "がっこう",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "object": "vocabulary",
+      "url": "local://subjects/89",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "sensei",
+        "characters": "先生",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%85%88%E7%94%9F",
+        "lesson_position": 89,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 先生, think \"teacher\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as せんせい. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Teacher",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "せんせい",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 90,
+      "object": "vocabulary",
+      "url": "local://subjects/90",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 3,
+        "slug": "saki",
+        "characters": "先",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%85%88",
+        "lesson_position": 90,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 先, think \"ahead\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as さき. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Ahead",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Previous",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "さき",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 91,
+      "object": "radical",
+      "url": "local://subjects/91",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "grass",
+        "characters": "艹",
+        "document_url": "https://www.wanikani.com/radicals/grass",
+        "lesson_position": 91,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 艹 as a grass. That simple image makes the radical meaning \"grass\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Grass",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Plants",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "object": "radical",
+      "url": "local://subjects/92",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "insect",
+        "characters": "虫",
+        "document_url": "https://www.wanikani.com/radicals/insect",
+        "lesson_position": 92,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 虫 as an insect. That simple image makes the radical meaning \"insect\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Insect",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Bug",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 93,
+      "object": "radical",
+      "url": "local://subjects/93",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "fish",
+        "characters": "魚",
+        "document_url": "https://www.wanikani.com/radicals/fish",
+        "lesson_position": 93,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 魚 as a fish. That simple image makes the radical meaning \"fish\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Fish",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Seafood",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "object": "radical",
+      "url": "local://subjects/94",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "horse",
+        "characters": "馬",
+        "document_url": "https://www.wanikani.com/radicals/horse",
+        "lesson_position": 94,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 馬 as a horse. That simple image makes the radical meaning \"horse\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Horse",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Steed",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 95,
+      "object": "radical",
+      "url": "local://subjects/95",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "door",
+        "characters": "戸",
+        "document_url": "https://www.wanikani.com/radicals/door",
+        "lesson_position": 95,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 戸 as a door. That simple image makes the radical meaning \"door\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Door",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Doorway",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 96,
+      "object": "radical",
+      "url": "local://subjects/96",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "knife",
+        "characters": "刀",
+        "document_url": "https://www.wanikani.com/radicals/knife",
+        "lesson_position": 96,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 刀 as a knife. That simple image makes the radical meaning \"knife\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Knife",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Blade",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 97,
+      "object": "radical",
+      "url": "local://subjects/97",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "boat",
+        "characters": "舟",
+        "document_url": "https://www.wanikani.com/radicals/boat",
+        "lesson_position": 97,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 舟 as a boat. That simple image makes the radical meaning \"boat\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Boat",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Ship",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "object": "radical",
+      "url": "local://subjects/98",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "hill",
+        "characters": "阝",
+        "document_url": "https://www.wanikani.com/radicals/hill",
+        "lesson_position": 98,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 阝 as a hill. That simple image makes the radical meaning \"hill\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Hill",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Mound",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 99,
+      "object": "radical",
+      "url": "local://subjects/99",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "cover",
+        "characters": "冖",
+        "document_url": "https://www.wanikani.com/radicals/cover",
+        "lesson_position": 99,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 冖 as a cover. That simple image makes the radical meaning \"cover\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Cover",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Lid",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 100,
+      "object": "radical",
+      "url": "local://subjects/100",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "house",
+        "characters": "家",
+        "document_url": "https://www.wanikani.com/radicals/house",
+        "lesson_position": 100,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 家 as a house. That simple image makes the radical meaning \"house\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "House",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Home",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 101,
+      "object": "kanji",
+      "url": "local://subjects/101",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "sky",
+        "characters": "空",
+        "document_url": "https://www.wanikani.com/kanjis/%E7%A9%BA",
+        "lesson_position": 101,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"sky\" tied to the shape 空. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading くう. It is the main onyomi reading to remember first for 空.",
+        "meanings": [
+          {
+            "meaning": "Sky",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Empty",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "くう",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "そら",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 102,
+      "object": "kanji",
+      "url": "local://subjects/102",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "grass",
+        "characters": "草",
+        "document_url": "https://www.wanikani.com/kanjis/%E8%8D%89",
+        "lesson_position": 102,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"grass\" tied to the shape 草. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading そう. It is the main onyomi reading to remember first for 草.",
+        "meanings": [
+          {
+            "meaning": "Grass",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Weed",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "そう",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "くさ",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 103,
+      "object": "kanji",
+      "url": "local://subjects/103",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "insect",
+        "characters": "虫",
+        "document_url": "https://www.wanikani.com/kanjis/%E8%99%AB",
+        "lesson_position": 103,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"insect\" tied to the shape 虫. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading ちゅう. It is the main onyomi reading to remember first for 虫.",
+        "meanings": [
+          {
+            "meaning": "Insect",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Bug",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ちゅう",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "むし",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 104,
+      "object": "kanji",
+      "url": "local://subjects/104",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "fish",
+        "characters": "魚",
+        "document_url": "https://www.wanikani.com/kanjis/%E9%AD%9A",
+        "lesson_position": 104,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"fish\" tied to the shape 魚. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading ぎょ. It is the main onyomi reading to remember first for 魚.",
+        "meanings": [
+          {
+            "meaning": "Fish",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ぎょ",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "さかな",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 105,
+      "object": "kanji",
+      "url": "local://subjects/105",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "horse",
+        "characters": "馬",
+        "document_url": "https://www.wanikani.com/kanjis/%E9%A6%AC",
+        "lesson_position": 105,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"horse\" tied to the shape 馬. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading ば. It is the main onyomi reading to remember first for 馬.",
+        "meanings": [
+          {
+            "meaning": "Horse",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ば",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "うま",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 106,
+      "object": "kanji",
+      "url": "local://subjects/106",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "door",
+        "characters": "戸",
+        "document_url": "https://www.wanikani.com/kanjis/%E6%88%B8",
+        "lesson_position": 106,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"door\" tied to the shape 戸. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading こ. It is the main onyomi reading to remember first for 戸.",
+        "meanings": [
+          {
+            "meaning": "Door",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "こ",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "と",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 107,
+      "object": "kanji",
+      "url": "local://subjects/107",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "sword",
+        "characters": "刀",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%88%80",
+        "lesson_position": 107,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"sword\" tied to the shape 刀. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading とう. It is the main onyomi reading to remember first for 刀.",
+        "meanings": [
+          {
+            "meaning": "Sword",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Knife",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "とう",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "かたな",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 108,
+      "object": "kanji",
+      "url": "local://subjects/108",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "cloth",
+        "characters": "布",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%B8%83",
+        "lesson_position": 108,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"cloth\" tied to the shape 布. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading ふ. It is the main onyomi reading to remember first for 布.",
+        "meanings": [
+          {
+            "meaning": "Cloth",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Fabric",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ふ",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "ぬの",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 109,
+      "object": "kanji",
+      "url": "local://subjects/109",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "boat",
+        "characters": "船",
+        "document_url": "https://www.wanikani.com/kanjis/%E8%88%B9",
+        "lesson_position": 109,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"boat\" tied to the shape 船. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading せん. It is the main onyomi reading to remember first for 船.",
+        "meanings": [
+          {
+            "meaning": "Boat",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Ship",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "せん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "ふね",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 110,
+      "object": "kanji",
+      "url": "local://subjects/110",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "house",
+        "characters": "家",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%AE%B6",
+        "lesson_position": 110,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"house\" tied to the shape 家. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading か. It is the main onyomi reading to remember first for 家.",
+        "meanings": [
+          {
+            "meaning": "House",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Home",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "か",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "いえ",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 111,
+      "object": "vocabulary",
+      "url": "local://subjects/111",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "sora",
+        "characters": "空",
+        "document_url": "https://www.wanikani.com/vocabularys/%E7%A9%BA",
+        "lesson_position": 111,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 空, think \"sky\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as そら. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Sky",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "そら",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 112,
+      "object": "vocabulary",
+      "url": "local://subjects/112",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "kusa",
+        "characters": "草",
+        "document_url": "https://www.wanikani.com/vocabularys/%E8%8D%89",
+        "lesson_position": 112,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 草, think \"grass\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as くさ. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Grass",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "くさ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 113,
+      "object": "vocabulary",
+      "url": "local://subjects/113",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "mushi",
+        "characters": "虫",
+        "document_url": "https://www.wanikani.com/vocabularys/%E8%99%AB",
+        "lesson_position": 113,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 虫, think \"insect\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as むし. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Insect",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Bug",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "むし",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 114,
+      "object": "vocabulary",
+      "url": "local://subjects/114",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "sakana",
+        "characters": "魚",
+        "document_url": "https://www.wanikani.com/vocabularys/%E9%AD%9A",
+        "lesson_position": 114,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 魚, think \"fish\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as さかな. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Fish",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "さかな",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 115,
+      "object": "vocabulary",
+      "url": "local://subjects/115",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "uma",
+        "characters": "馬",
+        "document_url": "https://www.wanikani.com/vocabularys/%E9%A6%AC",
+        "lesson_position": 115,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 馬, think \"horse\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as うま. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Horse",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "うま",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 116,
+      "object": "vocabulary",
+      "url": "local://subjects/116",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "to",
+        "characters": "戸",
+        "document_url": "https://www.wanikani.com/vocabularys/%E6%88%B8",
+        "lesson_position": 116,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 戸, think \"door\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as と. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Door",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "と",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 117,
+      "object": "vocabulary",
+      "url": "local://subjects/117",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "katana",
+        "characters": "刀",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%88%80",
+        "lesson_position": 117,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 刀, think \"sword\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as かたな. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Sword",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "かたな",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 118,
+      "object": "vocabulary",
+      "url": "local://subjects/118",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "nuno",
+        "characters": "布",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%B8%83",
+        "lesson_position": 118,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 布, think \"cloth\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as ぬの. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Cloth",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ぬの",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 119,
+      "object": "vocabulary",
+      "url": "local://subjects/119",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "fune",
+        "characters": "船",
+        "document_url": "https://www.wanikani.com/vocabularys/%E8%88%B9",
+        "lesson_position": 119,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 船, think \"boat\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as ふね. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Boat",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ふね",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 120,
+      "object": "vocabulary",
+      "url": "local://subjects/120",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 4,
+        "slug": "ie",
+        "characters": "家",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%AE%B6",
+        "lesson_position": 120,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 家, think \"house\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as いえ. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "House",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Home",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "いえ",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 121,
+      "object": "radical",
+      "url": "local://subjects/121",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "book",
+        "characters": "本",
+        "document_url": "https://www.wanikani.com/radicals/book",
+        "lesson_position": 121,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 本 as a book. That simple image makes the radical meaning \"book\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Book",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Origin",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 122,
+      "object": "radical",
+      "url": "local://subjects/122",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "east",
+        "characters": "東",
+        "document_url": "https://www.wanikani.com/radicals/east",
+        "lesson_position": 122,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 東 as an east. That simple image makes the radical meaning \"east\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "East",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Eastern",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 123,
+      "object": "radical",
+      "url": "local://subjects/123",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "west",
+        "characters": "西",
+        "document_url": "https://www.wanikani.com/radicals/west",
+        "lesson_position": 123,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 西 as a west. That simple image makes the radical meaning \"west\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "West",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Western",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 124,
+      "object": "radical",
+      "url": "local://subjects/124",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "south",
+        "characters": "南",
+        "document_url": "https://www.wanikani.com/radicals/south",
+        "lesson_position": 124,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 南 as a south. That simple image makes the radical meaning \"south\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "South",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Southern",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 125,
+      "object": "radical",
+      "url": "local://subjects/125",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "north",
+        "characters": "北",
+        "document_url": "https://www.wanikani.com/radicals/north",
+        "lesson_position": 125,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 北 as a north. That simple image makes the radical meaning \"north\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "North",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Northern",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 126,
+      "object": "radical",
+      "url": "local://subjects/126",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "long",
+        "characters": "長",
+        "document_url": "https://www.wanikani.com/radicals/long",
+        "lesson_position": 126,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 長 as a long. That simple image makes the radical meaning \"long\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Long",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Leader",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 127,
+      "object": "radical",
+      "url": "local://subjects/127",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "eat",
+        "characters": "食",
+        "document_url": "https://www.wanikani.com/radicals/eat",
+        "lesson_position": 127,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 食 as an eat. That simple image makes the radical meaning \"eat\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Eat",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Food",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 128,
+      "object": "radical",
+      "url": "local://subjects/128",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "road",
+        "characters": "辶",
+        "document_url": "https://www.wanikani.com/radicals/road",
+        "lesson_position": 128,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 辶 as a road. That simple image makes the radical meaning \"road\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Road",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Movement",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 129,
+      "object": "radical",
+      "url": "local://subjects/129",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "sickness",
+        "characters": "疒",
+        "document_url": "https://www.wanikani.com/radicals/sickness",
+        "lesson_position": 129,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 疒 as a sickness. That simple image makes the radical meaning \"sickness\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Sickness",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Illness",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 130,
+      "object": "radical",
+      "url": "local://subjects/130",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "run",
+        "characters": "走",
+        "document_url": "https://www.wanikani.com/radicals/run",
+        "lesson_position": 130,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Picture 走 as a run. That simple image makes the radical meaning \"run\" easy to remember.",
+        "meanings": [
+          {
+            "meaning": "Run",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Dash",
+            "type": "whitelist"
+          }
+        ]
+      }
+    },
+    {
+      "id": 131,
+      "object": "kanji",
+      "url": "local://subjects/131",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "book",
+        "characters": "本",
+        "document_url": "https://www.wanikani.com/kanjis/%E6%9C%AC",
+        "lesson_position": 131,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"book\" tied to the shape 本. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading ほん. It is the main onyomi reading to remember first for 本.",
+        "meanings": [
+          {
+            "meaning": "Book",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Origin",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ほん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "もと",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 132,
+      "object": "kanji",
+      "url": "local://subjects/132",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "east",
+        "characters": "東",
+        "document_url": "https://www.wanikani.com/kanjis/%E6%9D%B1",
+        "lesson_position": 132,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"east\" tied to the shape 東. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading とう. It is the main onyomi reading to remember first for 東.",
+        "meanings": [
+          {
+            "meaning": "East",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "とう",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "ひがし",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 133,
+      "object": "kanji",
+      "url": "local://subjects/133",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "west",
+        "characters": "西",
+        "document_url": "https://www.wanikani.com/kanjis/%E8%A5%BF",
+        "lesson_position": 133,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"west\" tied to the shape 西. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading せい. It is the main onyomi reading to remember first for 西.",
+        "meanings": [
+          {
+            "meaning": "West",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "せい",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "にし",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 134,
+      "object": "kanji",
+      "url": "local://subjects/134",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "south",
+        "characters": "南",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%8D%97",
+        "lesson_position": 134,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"south\" tied to the shape 南. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading なん. It is the main onyomi reading to remember first for 南.",
+        "meanings": [
+          {
+            "meaning": "South",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "なん",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "みなみ",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 135,
+      "object": "kanji",
+      "url": "local://subjects/135",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "north",
+        "characters": "北",
+        "document_url": "https://www.wanikani.com/kanjis/%E5%8C%97",
+        "lesson_position": 135,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"north\" tied to the shape 北. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading ほく. It is the main onyomi reading to remember first for 北.",
+        "meanings": [
+          {
+            "meaning": "North",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ほく",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "きた",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 136,
+      "object": "kanji",
+      "url": "local://subjects/136",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "long",
+        "characters": "長",
+        "document_url": "https://www.wanikani.com/kanjis/%E9%95%B7",
+        "lesson_position": 136,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"long\" tied to the shape 長. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading ちょう. It is the main onyomi reading to remember first for 長.",
+        "meanings": [
+          {
+            "meaning": "Long",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Leader",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ちょう",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "なが",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 137,
+      "object": "kanji",
+      "url": "local://subjects/137",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "eat",
+        "characters": "食",
+        "document_url": "https://www.wanikani.com/kanjis/%E9%A3%9F",
+        "lesson_position": 137,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"eat\" tied to the shape 食. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading しょく. It is the main onyomi reading to remember first for 食.",
+        "meanings": [
+          {
+            "meaning": "Eat",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Food",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "しょく",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "た",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 138,
+      "object": "kanji",
+      "url": "local://subjects/138",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "run",
+        "characters": "走",
+        "document_url": "https://www.wanikani.com/kanjis/%E8%B5%B0",
+        "lesson_position": 138,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"run\" tied to the shape 走. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading そう. It is the main onyomi reading to remember first for 走.",
+        "meanings": [
+          {
+            "meaning": "Run",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Race",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "そう",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "はし",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 139,
+      "object": "kanji",
+      "url": "local://subjects/139",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "illness",
+        "characters": "病",
+        "document_url": "https://www.wanikani.com/kanjis/%E7%97%85",
+        "lesson_position": 139,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"illness\" tied to the shape 病. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading びょう. It is the main onyomi reading to remember first for 病.",
+        "meanings": [
+          {
+            "meaning": "Illness",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Sick",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "びょう",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          },
+          {
+            "reading": "やまい",
+            "primary": false,
+            "accepted_answer": true,
+            "type": "kunyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 140,
+      "object": "kanji",
+      "url": "local://subjects/140",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "station",
+        "characters": "駅",
+        "document_url": "https://www.wanikani.com/kanjis/%E9%A7%85",
+        "lesson_position": 140,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "Keep the core idea of \"station\" tied to the shape 駅. Recalling that central image will make this kanji easier to recognize in reviews.",
+        "reading_mnemonic": "Start with the reading えき. It is the main onyomi reading to remember first for 駅.",
+        "meanings": [
+          {
+            "meaning": "Station",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "auxiliary_meanings": [
+          {
+            "meaning": "Train Station",
+            "type": "whitelist"
+          }
+        ],
+        "readings": [
+          {
+            "reading": "えき",
+            "primary": true,
+            "accepted_answer": true,
+            "type": "onyomi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 141,
+      "object": "vocabulary",
+      "url": "local://subjects/141",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "hon",
+        "characters": "本",
+        "document_url": "https://www.wanikani.com/vocabularys/%E6%9C%AC",
+        "lesson_position": 141,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 本, think \"book\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as ほん. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Book",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ほん",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 142,
+      "object": "vocabulary",
+      "url": "local://subjects/142",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "higashi",
+        "characters": "東",
+        "document_url": "https://www.wanikani.com/vocabularys/%E6%9D%B1",
+        "lesson_position": 142,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 東, think \"east\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as ひがし. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "East",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ひがし",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 143,
+      "object": "vocabulary",
+      "url": "local://subjects/143",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "nishiguchi",
+        "characters": "西口",
+        "document_url": "https://www.wanikani.com/vocabularys/%E8%A5%BF%E5%8F%A3",
+        "lesson_position": 143,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 西口, think \"west exit\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as にしぐち. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "West Exit",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "にしぐち",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 144,
+      "object": "vocabulary",
+      "url": "local://subjects/144",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "minamiguchi",
+        "characters": "南口",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%8D%97%E5%8F%A3",
+        "lesson_position": 144,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 南口, think \"south exit\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as みなみぐち. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "South Exit",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "みなみぐち",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 145,
+      "object": "vocabulary",
+      "url": "local://subjects/145",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "kitaguchi",
+        "characters": "北口",
+        "document_url": "https://www.wanikani.com/vocabularys/%E5%8C%97%E5%8F%A3",
+        "lesson_position": 145,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 北口, think \"north exit\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as きたぐち. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "North Exit",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "きたぐち",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 146,
+      "object": "vocabulary",
+      "url": "local://subjects/146",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "nagai",
+        "characters": "長い",
+        "document_url": "https://www.wanikani.com/vocabularys/%E9%95%B7%E3%81%84",
+        "lesson_position": 146,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 長い, think \"long\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as ながい. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Long",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "ながい",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 147,
+      "object": "vocabulary",
+      "url": "local://subjects/147",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "taberu",
+        "characters": "食べる",
+        "document_url": "https://www.wanikani.com/vocabularys/%E9%A3%9F%E3%81%B9%E3%82%8B",
+        "lesson_position": 147,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 食べる, think \"to eat\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as たべる. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "To Eat",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "たべる",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 148,
+      "object": "vocabulary",
+      "url": "local://subjects/148",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "hashiru",
+        "characters": "走る",
+        "document_url": "https://www.wanikani.com/vocabularys/%E8%B5%B0%E3%82%8B",
+        "lesson_position": 148,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 走る, think \"to run\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as はしる. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "To Run",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "はしる",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 149,
+      "object": "vocabulary",
+      "url": "local://subjects/149",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "byouki",
+        "characters": "病気",
+        "document_url": "https://www.wanikani.com/vocabularys/%E7%97%85%E6%B0%97",
+        "lesson_position": 149,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 病気, think \"illness\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as びょうき. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Illness",
+            "primary": true,
+            "accepted_answer": true
+          },
+          {
+            "meaning": "Sickness",
+            "primary": false,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "びょうき",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 150,
+      "object": "vocabulary",
+      "url": "local://subjects/150",
+      "data_updated_at": "2026-04-03T21:29:25.096Z",
+      "data": {
+        "level": 5,
+        "slug": "eki",
+        "characters": "駅",
+        "document_url": "https://www.wanikani.com/vocabularys/%E9%A7%85",
+        "lesson_position": 150,
+        "spaced_repetition_system_id": 1,
+        "meaning_mnemonic": "When you see 駅, think \"station\". Treat the full written form as one unit so the meaning comes up quickly during lessons and reviews.",
+        "reading_mnemonic": "Read this vocabulary as えき. Say it as one spoken word instead of splitting it back into individual kanji readings.",
+        "meanings": [
+          {
+            "meaning": "Station",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ],
+        "readings": [
+          {
+            "reading": "えき",
+            "primary": true,
+            "accepted_answer": true
+          }
+        ]
+      }
+    }
+  ]
+}
