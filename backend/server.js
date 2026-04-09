@@ -8,9 +8,22 @@ const logger = require('./logger');
 const app = express();
 const PORT = Number(process.env.PORT || 8080);
 const JWT_SECRET = process.env.JWT_SECRET || 'change-me-in-production';
-const allowedOrigins = process.env.CORS_ORIGIN
-  ? process.env.CORS_ORIGIN.split(',').map((origin) => origin.trim())
-  : ['http://localhost:8081', 'http://localhost:19006'];
+const defaultAllowedOrigins = [
+  'http://localhost:8081',
+  'http://127.0.0.1:8081',
+  'http://localhost:19006',
+  'http://127.0.0.1:19006',
+  'http://localhost:3000',
+  'http://127.0.0.1:3000',
+];
+// Render can provide a comma-separated CORS_ORIGIN env var for deployed web origins.
+const allowedOrigins = (
+  process.env.CORS_ORIGIN
+    ? process.env.CORS_ORIGIN.split(',')
+    : defaultAllowedOrigins
+)
+  .map((origin) => origin.trim())
+  .filter(Boolean);
 
 app.disable('x-powered-by');
 app.set('trust proxy', 1);
@@ -31,6 +44,8 @@ app.use(
 
       return callback(new Error('Origin not allowed by CORS policy'));
     },
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
     credentials: true,
   })
 );

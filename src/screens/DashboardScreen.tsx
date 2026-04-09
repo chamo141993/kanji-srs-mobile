@@ -3,6 +3,7 @@ import {
   ActivityIndicator,
   Alert,
   Button,
+  Platform,
   ScrollView,
   Text,
   TouchableOpacity,
@@ -10,15 +11,41 @@ import {
 } from "react-native";
 import { useRouter } from "expo-router";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
-import {
-  getDashboardStats,
-  importSubjectsFromJson,
-  initializeDatabase,
-  resetSampleProgress,
-  type DashboardStats,
-} from "../lib/db"; 
+import type { DashboardStats } from "../lib/db";
 
 const BUNDLED_WANIKANI_SUBJECTS = require("../../assets/data/wanikani-massive-dump.json");
+const SYNC_URL = "https://kanji-backend-dtyx.onrender.com/api/sync";
+const MOCK_SYNC_JWT = "mock-jwt-secret-token-for-grading";
+const IS_WEB = Platform.OS === "web";
+
+const WEB_DASHBOARD_STATS: DashboardStats = {
+  currentLevel: 1,
+  pendingLessons: 0,
+  pendingReviews: 0,
+  stageBreakdown: {
+    apprentice: 0,
+    guru: 0,
+    master: 0,
+    enlightened: 0,
+  },
+};
+
+const WEB_SYNC_PAYLOAD = {
+  progress: [
+    {
+      kanji: "水",
+      meaning: "Water",
+      status: "memorized",
+      source: "expo-web",
+    },
+    {
+      kanji: "火",
+      meaning: "Fire",
+      status: "learning",
+      source: "expo-web",
+    },
+  ],
+};
 
 export default function DashboardScreen() {
   const router = useRouter();
@@ -36,6 +63,12 @@ export default function DashboardScreen() {
     setError(null);
 
     try {
+      if (IS_WEB) {
+        setStats(WEB_DASHBOARD_STATS);
+        return;
+      }
+
+      const { getDashboardStats, initializeDatabase } = await import("../lib/db");
       await initializeDatabase();
       const nextStats = await getDashboardStats();
       setStats(nextStats);
@@ -51,10 +84,17 @@ export default function DashboardScreen() {
   }, [loadStats]);
 
   const handleReset = useCallback(async () => {
+    if (IS_WEB) {
+      setImportMessage("Reset Test Data is only available on iOS and Android.");
+      return;
+    }
+
     setIsResetting(true);
     setError(null);
+    setImportMessage(null);
 
     try {
+      const { getDashboardStats, resetSampleProgress } = await import("../lib/db");
       await resetSampleProgress();
       const nextStats = await getDashboardStats();
       setStats(nextStats);
@@ -66,11 +106,17 @@ export default function DashboardScreen() {
   }, []);
 
   const handleImport = useCallback(async () => {
+    if (IS_WEB) {
+      setImportMessage("Local SQLite imports are disabled on web. Use Secure Cloud Sync instead.");
+      return;
+    }
+
     setIsImporting(true);
     setError(null);
     setImportMessage(null);
 
     try {
+      const { getDashboardStats, importSubjectsFromJson } = await import("../lib/db");
       const result = await importSubjectsFromJson(BUNDLED_WANIKANI_SUBJECTS);
       const nextStats = await getDashboardStats();
       setStats(nextStats);
@@ -91,8 +137,10 @@ export default function DashboardScreen() {
 
   const pendingLessons = stats?.pendingLessons ?? 0;
   const pendingReviews = stats?.pendingReviews ?? 0;
-  const lessonDisabled = pendingLessons === 0 || isLoading;
-  const reviewDisabled = pendingReviews === 0 || isLoading;
+  const lessonDisabled = IS_WEB || pendingLessons === 0 || isLoading;
+  const reviewDisabled = IS_WEB || pendingReviews === 0 || isLoading;
+  const importDisabled = IS_WEB || isImporting;
+  const resetDisabled = IS_WEB || isResetting;
 
   if (isLoading && !stats) {
     return (
@@ -108,32 +156,39 @@ export default function DashboardScreen() {
   }
   const handleSync = async () => {
     try {
-      // 1. Package the mock SQLite data (you can hook this up to your real SQLite later)
-      const localProgress = [
-        { kanji: '水', meaning: 'Water', status: 'memorized' },
-        { kanji: '火', meaning: 'Fire', status: 'learning' }
-      ];
+      setError(null);
 
-      // REMINDER: 10.0.2.2 for Android Emulator!
-      const backendUrl = 'http://10.0.2.2:8080/api/sync'; 
+      const payload = IS_WEB
+        ? WEB_SYNC_PAYLOAD
+        : {
+            progress: [
+              { kanji: "水", meaning: "Water", status: "memorized" },
+              { kanji: "火", meaning: "Fire", status: "learning" },
+            ],
+          };
 
-      const response = await fetch(backendUrl, {
-        method: 'POST',
+      const response = await fetch(SYNC_URL, {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer mock-jwt-secret-token-for-grading'
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${MOCK_SYNC_JWT}`,
         },
-        body: JSON.stringify({ progress: localProgress })
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
-        Alert.alert('Success', 'Kanji progress securely synced to the cloud!');
+        Alert.alert(
+          "Success",
+          IS_WEB
+            ? "Web sync payload securely sent to the cloud."
+            : "Kanji progress securely synced to the cloud!"
+        );
       } else {
-        Alert.alert('Security Alert', 'Sync failed. Unauthorized token.');
+        Alert.alert("Security Alert", "Sync failed. Unauthorized token.");
       }
     } catch (error) {
       console.error(error);
-      Alert.alert('Network Error', 'Could not reach the Node server.');
+      Alert.alert("Network Error", "Could not reach the Node server.");
     }
   };
 
@@ -185,7 +240,9 @@ export default function DashboardScreen() {
               }`}
             >
               <Text className="text-center text-lg font-bold uppercase tracking-[2px] text-white">
-                {pendingLessons > 0
+                {IS_WEB
+                  ? "Lessons unavailable on web"
+                  : pendingLessons > 0
                   ? `Start Lessons (${pendingLessons})`
                   : "No Lessons Available"}
               </Text>
@@ -207,7 +264,9 @@ export default function DashboardScreen() {
               }`}
             >
               <Text className="text-center text-lg font-bold uppercase tracking-[2px] text-white">
-                {pendingReviews > 0
+                {IS_WEB
+                  ? "Reviews unavailable on web"
+                  : pendingReviews > 0
                   ? `Start Reviews (${pendingReviews})`
                   : "No Reviews Available"}
               </Text>
@@ -264,35 +323,52 @@ export default function DashboardScreen() {
 
           <View style={{ marginTop: 20 }}>
             <Button
-              title="Secure Cloud Sync"
+              title={IS_WEB ? "Secure Cloud Sync (Web)" : "Secure Cloud Sync"}
               color="#841584"
               onPress={handleSync}
             />
 
+            {IS_WEB ? (
+              <View className="mt-4 rounded-2xl bg-sky-50 px-4 py-3">
+                <Text className="text-sm text-sky-700">
+                  Web mode skips local SQLite and sends a hardcoded sync payload directly to
+                  Render.
+                </Text>
+              </View>
+            ) : null}
+
             <View className="mt-6 gap-3">
               <TouchableOpacity
                 onPress={() => void handleImport()}
-                disabled={isImporting}
+                disabled={importDisabled}
                 activeOpacity={0.85}
                 className={`rounded-2xl px-5 py-4 ${
-                  isImporting ? "bg-indigo-400" : "bg-indigo-600"
+                  importDisabled ? "bg-indigo-400" : "bg-indigo-600"
                 }`}
               >
                 <Text className="text-center text-sm font-bold uppercase tracking-[2px] text-white">
-                  {isImporting ? "Importing..." : "Import Massive Level 1-5 JSON"}
+                  {IS_WEB
+                    ? "Import Disabled on Web"
+                    : isImporting
+                      ? "Importing..."
+                      : "Import Massive Level 1-5 JSON"}
                 </Text>
               </TouchableOpacity>
 
               <TouchableOpacity
                 onPress={() => void handleReset()}
-                disabled={isResetting}
+                disabled={resetDisabled}
                 activeOpacity={0.85}
                 className={`rounded-2xl px-5 py-4 ${
-                  isResetting ? "bg-slate-500" : "bg-slate-700"
+                  resetDisabled ? "bg-slate-500" : "bg-slate-700"
                 }`}
               >
                 <Text className="text-center text-sm font-bold uppercase tracking-[2px] text-white">
-                  {isResetting ? "Resetting..." : "Reset Test Data"}
+                  {IS_WEB
+                    ? "Reset Disabled on Web"
+                    : isResetting
+                      ? "Resetting..."
+                      : "Reset Test Data"}
                 </Text>
               </TouchableOpacity>
             </View>
