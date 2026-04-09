@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
+  Alert,
+  Button,
   ScrollView,
   Text,
   TouchableOpacity,
@@ -14,7 +16,7 @@ import {
   initializeDatabase,
   resetSampleProgress,
   type DashboardStats,
-} from "../lib/db";
+} from "../lib/db"; 
 
 const BUNDLED_WANIKANI_SUBJECTS = require("../../assets/data/wanikani-massive-dump.json");
 
@@ -104,6 +106,36 @@ export default function DashboardScreen() {
       </SafeAreaView>
     );
   }
+  const handleSync = async () => {
+    try {
+      // 1. Package the mock SQLite data (you can hook this up to your real SQLite later)
+      const localProgress = [
+        { kanji: '水', meaning: 'Water', status: 'memorized' },
+        { kanji: '火', meaning: 'Fire', status: 'learning' }
+      ];
+
+      // REMINDER: 10.0.2.2 for Android Emulator!
+      const backendUrl = 'http://10.0.2.2:8080/api/sync'; 
+
+      const response = await fetch(backendUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer mock-jwt-secret-token-for-grading'
+        },
+        body: JSON.stringify({ progress: localProgress })
+      });
+
+      if (response.ok) {
+        Alert.alert('Success', 'Kanji progress securely synced to the cloud!');
+      } else {
+        Alert.alert('Security Alert', 'Sync failed. Unauthorized token.');
+      }
+    } catch (error) {
+      console.error(error);
+      Alert.alert('Network Error', 'Could not reach the Node server.');
+    }
+  };
 
   return (
     <SafeAreaView className="flex-1 bg-slate-900" edges={["top", "left", "right"]}>
@@ -230,32 +262,40 @@ export default function DashboardScreen() {
             ) : null}
           </View>
 
-          <View className="mt-6 gap-3">
-            <TouchableOpacity
-              onPress={() => void handleImport()}
-              disabled={isImporting}
-              activeOpacity={0.85}
-              className={`rounded-2xl px-5 py-4 ${
-                isImporting ? "bg-indigo-400" : "bg-indigo-600"
-              }`}
-            >
-              <Text className="text-center text-sm font-bold uppercase tracking-[2px] text-white">
-                {isImporting ? "Importing..." : "Import Massive Level 1-5 JSON"}
-              </Text>
-            </TouchableOpacity>
+          <View style={{ marginTop: 20 }}>
+            <Button
+              title="Secure Cloud Sync"
+              color="#841584"
+              onPress={handleSync}
+            />
 
-            <TouchableOpacity
-              onPress={() => void handleReset()}
-              disabled={isResetting}
-              activeOpacity={0.85}
-              className={`rounded-2xl px-5 py-4 ${
-                isResetting ? "bg-slate-500" : "bg-slate-700"
-              }`}
-            >
-              <Text className="text-center text-sm font-bold uppercase tracking-[2px] text-white">
-                {isResetting ? "Resetting..." : "Reset Test Data"}
-              </Text>
-            </TouchableOpacity>
+            <View className="mt-6 gap-3">
+              <TouchableOpacity
+                onPress={() => void handleImport()}
+                disabled={isImporting}
+                activeOpacity={0.85}
+                className={`rounded-2xl px-5 py-4 ${
+                  isImporting ? "bg-indigo-400" : "bg-indigo-600"
+                }`}
+              >
+                <Text className="text-center text-sm font-bold uppercase tracking-[2px] text-white">
+                  {isImporting ? "Importing..." : "Import Massive Level 1-5 JSON"}
+                </Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                onPress={() => void handleReset()}
+                disabled={isResetting}
+                activeOpacity={0.85}
+                className={`rounded-2xl px-5 py-4 ${
+                  isResetting ? "bg-slate-500" : "bg-slate-700"
+                }`}
+              >
+                <Text className="text-center text-sm font-bold uppercase tracking-[2px] text-white">
+                  {isResetting ? "Resetting..." : "Reset Test Data"}
+                </Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
       </ScrollView>

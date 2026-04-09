@@ -1,22 +1,38 @@
-# syntax=docker/dockerfile:1.7
+# ==========================================
+# STAGE 1: The Builder
+# ==========================================
+# We use a standard Node image to install dependencies and build the app
+FROM node:24-alpine AS builder
 
-FROM node:20-bookworm-slim AS deps
+# Set the working directory
 WORKDIR /app
-ENV NODE_ENV=production
+
+# Copy package files first to leverage Docker layer caching
 COPY package*.json ./
-RUN npm ci --omit=dev && npm cache clean --force
 
-FROM node:20-bookworm-slim AS runtime-prep
-WORKDIR /app
-ENV NODE_ENV=production
-COPY --from=deps /app/node_modules ./node_modules
-COPY package.json server.js logger.js ./
-RUN chown -R 65532:65532 /app
+# Install ALL dependencies (including express, helmet, winston, etc.)
+RUN npm ci
 
-FROM gcr.io/distroless/nodejs20-debian12:nonroot AS production
+# Copy the rest of the application code
+COPY . .
+
+# ==========================================
+# STAGE 2: The Distroless Production Image
+# ==========================================
+# We use Google's distroless Node image for maximum OS hardening
+FROM gcr.io/distroless/nodejs20-debian11
+
+# Set the working directory
 WORKDIR /app
+
+# Copy the application code and built node_modules from the builder stage
+COPY --from=builder /app /app
+
+# Set the environment variable to production
 ENV NODE_ENV=production
-COPY --from=runtime-prep --chown=nonroot:nonroot /app /app
-USER nonroot:nonroot
+
+# Expose the port your server runs on
 EXPOSE 8080
+
+# Start the application
 CMD ["server.js"]

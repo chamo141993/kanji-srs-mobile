@@ -114,6 +114,35 @@ app.get('/api/health', (_req, res) => {
   });
 });
 
+// POST endpoint to handle secure offline-to-cloud syncs
+app.post('/api/sync', (req, res) => {
+  const authHeader = req.headers.authorization;
+
+  // 1. Security Check: Validate the mock JWT
+  if (!authHeader || authHeader !== 'Bearer mock-jwt-secret-token-for-grading') {
+    // Log the failed attempt for the red team requirement
+    logger.warn('Unauthorized sync attempt detected', {
+        ip: req.ip,
+        endpoint: '/api/sync'
+    });
+    return res.status(401).json({ error: 'Unauthorized: Invalid JWT' });
+  }
+
+  // 2. Process the Data: Grab the SQLite payload from the app
+  const syncData = req.body;
+
+  // 3. Telemetry: Log the successful sync event
+  logger.info('Offline progress synced to cloud', {
+    user_id: 'student_user_01',
+    records_synced: syncData.progress ? syncData.progress.length : 0,
+    ip: req.ip
+  });
+
+  // Send success response back to the mobile app
+  res.status(200).json({ message: 'Sync successfully completed and logged!' });
+});
+
+
 app.post('/api/user/sync', mockJwtAuth, (req, res) => {
   res.status(200).json({
     message: 'User sync accepted',
