@@ -14,21 +14,11 @@ import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
 import type { DashboardStats } from "../lib/db";
 
 const BUNDLED_WANIKANI_SUBJECTS = require("../../assets/data/wanikani-massive-dump.json");
+const BACKEND_BASE_URL = "https://kanji-backend-dtyx.onrender.com";
 const SYNC_URL = "https://kanji-backend-dtyx.onrender.com/api/sync";
+const WEB_DASHBOARD_URL = `${BACKEND_BASE_URL}/api/web/dashboard`;
 const MOCK_SYNC_JWT = "mock-jwt-secret-token-for-grading";
 const IS_WEB = Platform.OS === "web";
-
-const WEB_DASHBOARD_STATS: DashboardStats = {
-  currentLevel: 1,
-  pendingLessons: 0,
-  pendingReviews: 0,
-  stageBreakdown: {
-    apprentice: 0,
-    guru: 0,
-    master: 0,
-    enlightened: 0,
-  },
-};
 
 const WEB_SYNC_PAYLOAD = {
   progress: [
@@ -47,6 +37,76 @@ const WEB_SYNC_PAYLOAD = {
   ],
 };
 
+const DEFAULT_WEB_DASHBOARD_STATS: DashboardStats = {
+  currentLevel: 1,
+  pendingLessons: 0,
+  pendingReviews: 0,
+  stageBreakdown: {
+    apprentice: 0,
+    guru: 0,
+    master: 0,
+    enlightened: 0,
+  },
+};
+
+type WebKanjiProgressItem = {
+  id: string;
+  kanji: string;
+  meaning: string;
+  status: string;
+  level: number;
+  nextReviewAt: string | null;
+};
+
+type WebDashboardResponse = {
+  progress: WebKanjiProgressItem[];
+  stats: DashboardStats;
+  syncSummary: {
+    lastSyncedAt: string | null;
+    recordsSynced: number;
+    source: string;
+  };
+  capabilities: {
+    webLessons: boolean;
+    webReviews: boolean;
+    cloudSync: boolean;
+  };
+  server: {
+    status: string;
+    service: string;
+    timestamp: string;
+    uptimeSeconds: number;
+  };
+};
+
+function formatWebSyncSummary(summary: WebDashboardResponse["syncSummary"]) {
+  if (!summary.lastSyncedAt) {
+    return "Connected to the Render backend. No cloud syncs have been recorded yet.";
+  }
+
+  return `Last cloud sync: ${summary.recordsSynced} record${
+    summary.recordsSynced === 1 ? "" : "s"
+  } from ${summary.source} at ${new Date(summary.lastSyncedAt).toLocaleString()}.`;
+}
+
+function buildFallbackWebStats() {
+  const progress = WEB_SYNC_PAYLOAD.progress;
+  const learningCount = progress.filter((entry) => entry.status === "learning").length;
+  const memorizedCount = progress.filter((entry) => entry.status === "memorized").length;
+
+  return {
+    currentLevel: 1,
+    pendingLessons: 0,
+    pendingReviews: learningCount,
+    stageBreakdown: {
+      apprentice: learningCount,
+      guru: memorizedCount,
+      master: 0,
+      enlightened: 0,
+    },
+  };
+}
+
 export default function DashboardScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
@@ -57,6 +117,8 @@ export default function DashboardScreen() {
   const [isImporting, setIsImporting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [importMessage, setImportMessage] = useState<string | null>(null);
+  const [webStatusMessage, setWebStatusMessage] = useState<string | null>(null);
+  const [webProgress, setWebProgress] = useState<WebKanjiProgressItem[]>([]);
 
   const loadStats = useCallback(async () => {
     setIsLoading(true);
@@ -64,7 +126,29 @@ export default function DashboardScreen() {
 
     try {
       if (IS_WEB) {
-        setStats(WEB_DASHBOARD_STATS);
+        const response = await fetch(WEB_DASHBOARD_URL, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
+        if (response.status === 404) {
+          setStats(DEFAULT_WEB_DASHBOARD_STATS);
+          setWebStatusMessage(
+            "Connected to Render sync. The live /api/web/dashboard route is not deployed yet, so web is using fallback dashboard data."
+          );
+          return;
+        }
+
+        if (!response.ok) {
+          throw new Error(`Web dashboard request failed with status ${response.status}.`);
+        }
+
+        const payload = (await response.json()) as WebDashboardResponse;
+        setWebProgress(payload.progress);
+        setStats(payload.stats);
+        setWebStatusMessage(formatWebSyncSummary(payload.syncSummary));
         return;
       }
 
@@ -73,6 +157,11 @@ export default function DashboardScreen() {
       const nextStats = await getDashboardStats();
       setStats(nextStats);
     } catch (err) {
+      if (IS_WEB) {
+        setWebStatusMessage(null);
+        setStats(DEFAULT_WEB_DASHBOARD_STATS);
+        setWebProgress([]);
+      }
       setError(err instanceof Error ? err.message : "Failed to load dashboard.");
     } finally {
       setIsLoading(false);
@@ -177,6 +266,35 @@ export default function DashboardScreen() {
       });
 
       if (response.ok) {
+        if (IS_WEB) {
+          const payload = (await response.json()) as
+            | {
+                progress?: WebKanjiProgressItem[];
+                stats?: DashboardStats;
+                syncSummary?: WebDashboardResponse["syncSummary"];
+                message?: string;
+              }
+            | undefined;
+
+          if (payload?.progress) {
+            setWebProgress(payload.progress);
+          }
+
+          if (payload?.stats) {
+            setStats(payload.stats);
+          } else {
+            setStats(buildFallbackWebStats());
+          }
+
+          if (payload?.syncSummary) {
+            setWebStatusMessage(formatWebSyncSummary(payload.syncSummary));
+          } else {
+            setWebStatusMessage(
+              "Cloud sync succeeded. The live backend has not deployed /api/web/dashboard yet, so this status is using frontend fallback data."
+            );
+          }
+        }
+
         Alert.alert(
           "Success",
           IS_WEB
@@ -331,9 +449,53 @@ export default function DashboardScreen() {
             {IS_WEB ? (
               <View className="mt-4 rounded-2xl bg-sky-50 px-4 py-3">
                 <Text className="text-sm text-sky-700">
-                  Web mode skips local SQLite and sends a hardcoded sync payload directly to
-                  Render.
+                  Web mode skips local SQLite, loads dashboard status from Render, and sends
+                  a hardcoded sync payload directly to the backend.
                 </Text>
+              </View>
+            ) : null}
+
+            {IS_WEB && webStatusMessage ? (
+              <View className="mt-4 rounded-2xl bg-emerald-50 px-4 py-3">
+                <Text className="text-sm text-emerald-700">{webStatusMessage}</Text>
+              </View>
+            ) : null}
+
+            {IS_WEB && webProgress.length > 0 ? (
+              <View className="mt-5 rounded-3xl bg-slate-800 p-6">
+                <Text className="text-xs font-semibold uppercase tracking-[3px] text-slate-400">
+                  Cloud Progress
+                </Text>
+
+                <View className="mt-4 gap-3">
+                  {webProgress.map((entry) => (
+                    <View
+                      key={entry.id}
+                      className="rounded-2xl bg-slate-700/50 px-4 py-4"
+                    >
+                      <View className="flex-row items-center justify-between">
+                        <Text className="text-2xl font-bold text-white">{entry.kanji}</Text>
+                        <Text className="text-xs font-semibold uppercase tracking-[2px] text-slate-300">
+                          Level {entry.level}
+                        </Text>
+                      </View>
+
+                      <Text className="mt-2 text-base font-semibold text-slate-100">
+                        {entry.meaning}
+                      </Text>
+
+                      <Text className="mt-1 text-sm text-slate-300">
+                        Status: {entry.status}
+                      </Text>
+
+                      <Text className="mt-1 text-sm text-slate-400">
+                        {entry.nextReviewAt
+                          ? `Next review: ${new Date(entry.nextReviewAt).toLocaleString()}`
+                          : "Next review: not scheduled"}
+                      </Text>
+                    </View>
+                  ))}
+                </View>
               </View>
             ) : null}
 
