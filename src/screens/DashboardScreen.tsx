@@ -19,7 +19,7 @@ import {
   WEB_DASHBOARD_URL,
 } from "../lib/api-config";
 
-const BUNDLED_WANIKANI_SUBJECTS = require("../../assets/data/wanikani-massive-dump.json");
+const BUNDLED_WANIKANI_SUBJECTS = require("../../assets/data/wanikani-subjects-normalized-levels-1-5.json");
 const IS_WEB = Platform.OS === "web";
 
 const WEB_SYNC_PAYLOAD = {
@@ -213,7 +213,7 @@ export default function DashboardScreen() {
       setStats(nextStats);
 
       if (result.insertedSubjects === 0) {
-        setImportMessage("Bundled WaniKani massive level 1-5 data is already imported.");
+        setImportMessage("Bundled normalized WaniKani level 1-5 data is already imported.");
       } else {
         setImportMessage(
           `Imported ${result.insertedSubjects} subjects and added ${result.seededReviews} new lessons.`
@@ -515,7 +515,7 @@ export default function DashboardScreen() {
                     ? "Import Disabled on Web"
                     : isImporting
                       ? "Importing..."
-                      : "Import Massive Level 1-5 JSON"}
+                      : "Import WaniKani Levels 1-5"}
                 </Text>
               </TouchableOpacity>
 

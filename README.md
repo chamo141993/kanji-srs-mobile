@@ -71,6 +71,18 @@ These files provide the NativeWind and Tailwind setup.
 
 Bundled local JSON files live here and can be imported into SQLite.
 
+Recommended WaniKani data layout:
+
+- `wanikani-massive-dump.json` — raw source export from WaniKani
+- `wanikani-subjects-normalized.json` — normalized full dataset used for app-friendly imports
+- `wanikani-subjects-normalized-levels-1-5.json` — smaller normalized subset for the current in-app import button
+
+Regenerate the normalized files from the raw dump with:
+
+```bash
+npm run normalize-wanikani-data
+```
+
 ## Tech stack
 
 - Expo
@@ -184,7 +196,7 @@ npx expo start -c
 1. The app launches into the dashboard.
 2. The dashboard initializes the local SQLite database.
 3. Starter subjects and review stats are seeded if needed.
-4. The import button loads bundled WaniKani-style JSON into the local database.
+4. The import button loads the bundled normalized WaniKani level 1–5 JSON into the local database.
 5. Starting reviews opens the review queue.
 6. Grading a card updates the local SRS stage and schedules the next review.
 
