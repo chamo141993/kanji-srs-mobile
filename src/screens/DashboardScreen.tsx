@@ -39,18 +39,6 @@ const WEB_SYNC_PAYLOAD = {
   ],
 };
 
-const DEFAULT_WEB_DASHBOARD_STATS: DashboardStats = {
-  currentLevel: 1,
-  pendingLessons: 0,
-  pendingReviews: 0,
-  stageBreakdown: {
-    apprentice: 0,
-    guru: 0,
-    master: 0,
-    enlightened: 0,
-  },
-};
-
 type WebKanjiProgressItem = {
   id: string;
   kanji: string;
@@ -91,24 +79,6 @@ function formatWebSyncSummary(summary: WebDashboardResponse["syncSummary"]) {
   } from ${summary.source} at ${new Date(summary.lastSyncedAt).toLocaleString()}.`;
 }
 
-function buildFallbackWebStats() {
-  const progress = WEB_SYNC_PAYLOAD.progress;
-  const learningCount = progress.filter((entry) => entry.status === "learning").length;
-  const memorizedCount = progress.filter((entry) => entry.status === "memorized").length;
-
-  return {
-    currentLevel: 1,
-    pendingLessons: 0,
-    pendingReviews: learningCount,
-    stageBreakdown: {
-      apprentice: learningCount,
-      guru: memorizedCount,
-      master: 0,
-      enlightened: 0,
-    },
-  };
-}
-
 export default function DashboardScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
@@ -122,64 +92,62 @@ export default function DashboardScreen() {
   const [webStatusMessage, setWebStatusMessage] = useState<string | null>(null);
   const [webProgress, setWebProgress] = useState<WebKanjiProgressItem[]>([]);
 
+  const loadCloudDashboard = useCallback(async () => {
+    if (!IS_WEB) return;
+
+    try {
+      const response = await fetch(WEB_DASHBOARD_URL, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (response.status === 404) {
+        setWebProgress([]);
+        setWebStatusMessage(
+          "Connected to Render sync. The live /api/web/dashboard route is not deployed yet."
+        );
+        return;
+      }
+
+      if (!response.ok) {
+        throw new Error(`Web dashboard request failed with status ${response.status}.`);
+      }
+
+      const payload = (await response.json()) as WebDashboardResponse;
+      setWebProgress(payload.progress);
+      setWebStatusMessage(formatWebSyncSummary(payload.syncSummary));
+    } catch {
+      setWebProgress([]);
+      setWebStatusMessage(
+        `Cloud sync is unavailable from ${API_BASE_URL}. Local browser study still works.`
+      );
+    }
+  }, []);
+
   const loadStats = useCallback(async () => {
     setIsLoading(true);
     setError(null);
 
     try {
-      if (IS_WEB) {
-        const response = await fetch(WEB_DASHBOARD_URL, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
-
-        if (response.status === 404) {
-          setStats(DEFAULT_WEB_DASHBOARD_STATS);
-          setWebStatusMessage(
-            "Connected to Render sync. The live /api/web/dashboard route is not deployed yet, so web is using fallback dashboard data."
-          );
-          return;
-        }
-
-        if (!response.ok) {
-          throw new Error(`Web dashboard request failed with status ${response.status}.`);
-        }
-
-        const payload = (await response.json()) as WebDashboardResponse;
-        setWebProgress(payload.progress);
-        setStats(payload.stats);
-        setWebStatusMessage(formatWebSyncSummary(payload.syncSummary));
-        return;
-      }
-
       const { getDashboardStats, initializeDatabase } = await import("../lib/db");
       await initializeDatabase();
       const nextStats = await getDashboardStats();
       setStats(nextStats);
+      await loadCloudDashboard();
     } catch (err) {
-      if (IS_WEB) {
-        setWebStatusMessage(null);
-        setStats(DEFAULT_WEB_DASHBOARD_STATS);
-        setWebProgress([]);
-      }
       setError(err instanceof Error ? err.message : "Failed to load dashboard.");
     } finally {
       setIsLoading(false);
     }
-  }, []);
+  }, [loadCloudDashboard]);
 
   useEffect(() => {
     void loadStats();
   }, [loadStats]);
 
   const handleReset = useCallback(async () => {
-    if (IS_WEB) {
-      setImportMessage("Reset Test Data is only available on iOS and Android.");
-      return;
-    }
-
     setIsResetting(true);
     setError(null);
     setImportMessage(null);
@@ -197,11 +165,6 @@ export default function DashboardScreen() {
   }, []);
 
   const handleImport = useCallback(async () => {
-    if (IS_WEB) {
-      setImportMessage("Local SQLite imports are disabled on web. Use Secure Cloud Sync instead.");
-      return;
-    }
-
     setIsImporting(true);
     setError(null);
     setImportMessage(null);
@@ -228,10 +191,10 @@ export default function DashboardScreen() {
 
   const pendingLessons = stats?.pendingLessons ?? 0;
   const pendingReviews = stats?.pendingReviews ?? 0;
-  const lessonDisabled = IS_WEB || pendingLessons === 0 || isLoading;
-  const reviewDisabled = IS_WEB || pendingReviews === 0 || isLoading;
-  const importDisabled = IS_WEB || isImporting;
-  const resetDisabled = IS_WEB || isResetting;
+  const lessonDisabled = pendingLessons === 0 || isLoading;
+  const reviewDisabled = pendingReviews === 0 || isLoading;
+  const importDisabled = isImporting;
+  const resetDisabled = isResetting;
 
   if (isLoading && !stats) {
     return (
@@ -282,17 +245,11 @@ export default function DashboardScreen() {
             setWebProgress(payload.progress);
           }
 
-          if (payload?.stats) {
-            setStats(payload.stats);
-          } else {
-            setStats(buildFallbackWebStats());
-          }
-
           if (payload?.syncSummary) {
             setWebStatusMessage(formatWebSyncSummary(payload.syncSummary));
           } else {
             setWebStatusMessage(
-              "Cloud sync succeeded. The live backend has not deployed /api/web/dashboard yet, so this status is using frontend fallback data."
+              "Cloud sync succeeded, but no cloud sync summary was returned."
             );
           }
         }
@@ -360,9 +317,7 @@ export default function DashboardScreen() {
               }`}
             >
               <Text className="text-center text-lg font-bold uppercase tracking-[2px] text-white">
-                {IS_WEB
-                  ? "Lessons unavailable on web"
-                  : pendingLessons > 0
+                {pendingLessons > 0
                   ? `Start Lessons (${pendingLessons})`
                   : "No Lessons Available"}
               </Text>
@@ -384,9 +339,7 @@ export default function DashboardScreen() {
               }`}
             >
               <Text className="text-center text-lg font-bold uppercase tracking-[2px] text-white">
-                {IS_WEB
-                  ? "Reviews unavailable on web"
-                  : pendingReviews > 0
+                {pendingReviews > 0
                   ? `Start Reviews (${pendingReviews})`
                   : "No Reviews Available"}
               </Text>
@@ -451,8 +404,8 @@ export default function DashboardScreen() {
             {IS_WEB ? (
               <View className="mt-4 rounded-2xl bg-sky-50 px-4 py-3">
                 <Text className="text-sm text-sky-700">
-                  Web mode skips local SQLite, loads dashboard status from {API_BASE_URL},
-                  and sends a hardcoded sync payload directly to the backend.
+                  Web mode now uses browser storage for imports, lessons, reviews, and reset.
+                  Secure Cloud Sync still sends the current demo sync payload to {API_BASE_URL}.
                 </Text>
               </View>
             ) : null}
@@ -511,11 +464,7 @@ export default function DashboardScreen() {
                 }`}
               >
                 <Text className="text-center text-sm font-bold uppercase tracking-[2px] text-white">
-                  {IS_WEB
-                    ? "Import Disabled on Web"
-                    : isImporting
-                      ? "Importing..."
-                      : "Import WaniKani Levels 1-5"}
+                  {isImporting ? "Importing..." : "Import WaniKani Levels 1-5"}
                 </Text>
               </TouchableOpacity>
 
@@ -528,11 +477,7 @@ export default function DashboardScreen() {
                 }`}
               >
                 <Text className="text-center text-sm font-bold uppercase tracking-[2px] text-white">
-                  {IS_WEB
-                    ? "Reset Disabled on Web"
-                    : isResetting
-                      ? "Resetting..."
-                      : "Reset Test Data"}
+                  {isResetting ? "Resetting..." : "Reset Test Data"}
                 </Text>
               </TouchableOpacity>
             </View>

@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ActivityIndicator, Platform, Text, TouchableOpacity, View } from "react-native";
-import { useRouter } from "expo-router";
+import { ActivityIndicator, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import type { ReviewQueueItem, SubjectType } from "../lib/db";
 
@@ -13,9 +12,7 @@ const SUBJECT_BG: Record<SubjectType, string> = {
 };
 
 export default function ReviewScreen() {
-  const router = useRouter();
   const insets = useSafeAreaInsets();
-  const isWeb = Platform.OS === "web";
 
   const [queue, setQueue] = useState<ReviewQueueItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -47,13 +44,6 @@ export default function ReviewScreen() {
     setError(null);
 
     try {
-      if (isWeb) {
-        setQueue([]);
-        setIsRevealed(false);
-        setFeedbackTone(null);
-        return;
-      }
-
       const { getPendingReviews, initializeDatabase } = await import("../lib/db");
       await initializeDatabase();
       const dueReviews = await getPendingReviews();
@@ -65,7 +55,7 @@ export default function ReviewScreen() {
     } finally {
       setIsLoading(false);
     }
-  }, [isWeb]);
+  }, []);
 
   useEffect(() => {
     void loadQueue();
@@ -144,37 +134,6 @@ export default function ReviewScreen() {
     },
     [advanceToNextReview, currentReview, isSubmitting, queue.length]
   );
-
-  if (isWeb) {
-    return (
-      <SafeAreaView className="flex-1 bg-slate-900" edges={["top", "left", "right"]}>
-        <View className="flex-1 items-center justify-center px-6">
-          <View className="w-full max-w-xl rounded-3xl bg-slate-800 p-8">
-            <Text className="text-center text-xs font-semibold uppercase tracking-[3px] text-slate-400">
-              Web Mode
-            </Text>
-            <Text className="mt-4 text-center text-3xl font-bold text-white">
-              Reviews use native-only local storage
-            </Text>
-            <Text className="mt-3 text-center text-base leading-6 text-slate-300">
-              The browser build skips offline SQLite, so review queues are unavailable on
-              web right now. Use the dashboard sync flow on web, or study from the native
-              app for local review sessions.
-            </Text>
-            <TouchableOpacity
-              onPress={() => router.replace("/")}
-              activeOpacity={0.85}
-              className="mt-8 rounded-2xl bg-pink-500 px-5 py-4"
-            >
-              <Text className="text-center text-sm font-bold uppercase tracking-[2px] text-white">
-                Back to Dashboard
-              </Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      </SafeAreaView>
-    );
-  }
 
   if (isLoading) {
     return (

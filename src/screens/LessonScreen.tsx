@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
-  Platform,
   ScrollView,
   Text,
   TouchableOpacity,
@@ -20,7 +19,6 @@ const SUBJECT_BG: Record<SubjectType, string> = {
 export default function LessonScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
-  const isWeb = Platform.OS === "web";
 
   const [queue, setQueue] = useState<LessonQueueItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -35,11 +33,6 @@ export default function LessonScreen() {
     setError(null);
 
     try {
-      if (isWeb) {
-        setQueue([]);
-        return;
-      }
-
       const { getPendingLessons, initializeDatabase } = await import("../lib/db");
       await initializeDatabase();
       const lessons = await getPendingLessons();
@@ -49,17 +42,17 @@ export default function LessonScreen() {
     } finally {
       setIsLoading(false);
     }
-  }, [isWeb]);
+  }, []);
 
   useEffect(() => {
     void loadLessons();
   }, [loadLessons]);
 
   useEffect(() => {
-    if (!isWeb && !isLoading && !error && queue.length === 0) {
+    if (!isLoading && !error && queue.length === 0) {
       router.replace("/");
     }
-  }, [error, isLoading, isWeb, queue.length, router]);
+  }, [error, isLoading, queue.length, router]);
 
   const subjectBgClass = useMemo(() => {
     if (!currentSubject) return "bg-slate-700";
@@ -88,37 +81,6 @@ export default function LessonScreen() {
       setIsSubmitting(false);
     }
   }, [currentLesson, isSubmitting, queue.length, router]);
-
-  if (isWeb) {
-    return (
-      <SafeAreaView className="flex-1 bg-slate-900" edges={["top", "left", "right"]}>
-        <View className="flex-1 items-center justify-center px-6">
-          <View className="w-full max-w-xl rounded-3xl bg-slate-800 p-8">
-            <Text className="text-center text-xs font-semibold uppercase tracking-[3px] text-slate-400">
-              Web Mode
-            </Text>
-            <Text className="mt-4 text-center text-3xl font-bold text-white">
-              Lessons use native-only local storage
-            </Text>
-            <Text className="mt-3 text-center text-base leading-6 text-slate-300">
-              The web build skips offline SQLite, so lesson queues are unavailable in the
-              browser right now. Use the dashboard sync flow on web, or open the app on iOS
-              or Android for local lessons.
-            </Text>
-            <TouchableOpacity
-              onPress={() => router.replace("/")}
-              activeOpacity={0.85}
-              className="mt-8 rounded-2xl bg-indigo-500 px-5 py-4"
-            >
-              <Text className="text-center text-sm font-bold uppercase tracking-[2px] text-white">
-                Back to Dashboard
-              </Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      </SafeAreaView>
-    );
-  }
 
   if (isLoading) {
     return (
