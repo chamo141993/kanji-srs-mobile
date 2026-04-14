@@ -17,6 +17,8 @@ const defaultAllowedOrigins = [
   'http://127.0.0.1:3000',
 ];
 const defaultAllowedOriginHostSuffixes = ['onrender.com'];
+const allowAllHttpsOrigins =
+  process.env.CORS_ALLOW_ALL_HTTPS_ORIGINS !== 'false';
 // Render can provide comma-separated CORS_ORIGIN / CORS_ORIGIN_SUFFIX env vars.
 const allowedOrigins = (
   process.env.CORS_ORIGIN
@@ -40,6 +42,14 @@ function isAllowedOrigin(origin) {
 
   try {
     const { protocol, hostname } = new URL(origin);
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
+      return protocol === 'http:' || protocol === 'https:';
+    }
+
+    if (allowAllHttpsOrigins && protocol === 'https:') {
+      return true;
+    }
+
     if (protocol !== 'https:') {
       return false;
     }
