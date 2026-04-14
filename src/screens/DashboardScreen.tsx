@@ -12,12 +12,14 @@ import {
 import { useRouter } from "expo-router";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import type { DashboardStats } from "../lib/db";
+import {
+  API_BASE_URL,
+  SYNC_BEARER_TOKEN,
+  SYNC_URL,
+  WEB_DASHBOARD_URL,
+} from "../lib/api-config";
 
 const BUNDLED_WANIKANI_SUBJECTS = require("../../assets/data/wanikani-massive-dump.json");
-const BACKEND_BASE_URL = "https://kanji-backend-dtyx.onrender.com";
-const SYNC_URL = "https://kanji-backend-dtyx.onrender.com/api/sync";
-const WEB_DASHBOARD_URL = `${BACKEND_BASE_URL}/api/web/dashboard`;
-const MOCK_SYNC_JWT = "mock-jwt-secret-token-for-grading";
 const IS_WEB = Platform.OS === "web";
 
 const WEB_SYNC_PAYLOAD = {
@@ -258,11 +260,11 @@ export default function DashboardScreen() {
 
       const response = await fetch(SYNC_URL, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${MOCK_SYNC_JWT}`,
-        },
-        body: JSON.stringify(payload),
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${SYNC_BEARER_TOKEN}`,
+          },
+          body: JSON.stringify(payload),
       });
 
       if (response.ok) {
@@ -449,8 +451,8 @@ export default function DashboardScreen() {
             {IS_WEB ? (
               <View className="mt-4 rounded-2xl bg-sky-50 px-4 py-3">
                 <Text className="text-sm text-sky-700">
-                  Web mode skips local SQLite, loads dashboard status from Render, and sends
-                  a hardcoded sync payload directly to the backend.
+                  Web mode skips local SQLite, loads dashboard status from {API_BASE_URL},
+                  and sends a hardcoded sync payload directly to the backend.
                 </Text>
               </View>
             ) : null}

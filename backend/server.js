@@ -16,7 +16,8 @@ const defaultAllowedOrigins = [
   'http://localhost:3000',
   'http://127.0.0.1:3000',
 ];
-// Render can provide a comma-separated CORS_ORIGIN env var for deployed web origins.
+const defaultAllowedOriginHostSuffixes = ['onrender.com'];
+// Render can provide comma-separated CORS_ORIGIN / CORS_ORIGIN_SUFFIX env vars.
 const allowedOrigins = (
   process.env.CORS_ORIGIN
     ? process.env.CORS_ORIGIN.split(',')
@@ -24,6 +25,34 @@ const allowedOrigins = (
 )
   .map((origin) => origin.trim())
   .filter(Boolean);
+const allowedOriginHostSuffixes = (
+  process.env.CORS_ORIGIN_SUFFIX
+    ? process.env.CORS_ORIGIN_SUFFIX.split(',')
+    : defaultAllowedOriginHostSuffixes
+)
+  .map((suffix) => suffix.trim().replace(/^\./, '').toLowerCase())
+  .filter(Boolean);
+
+function isAllowedOrigin(origin) {
+  if (!origin || allowedOrigins.includes(origin)) {
+    return true;
+  }
+
+  try {
+    const { protocol, hostname } = new URL(origin);
+    if (protocol !== 'https:') {
+      return false;
+    }
+
+    const normalizedHostname = hostname.toLowerCase();
+    return allowedOriginHostSuffixes.some(
+      (suffix) =>
+        normalizedHostname === suffix || normalizedHostname.endsWith(`.${suffix}`)
+    );
+  } catch (_error) {
+    return false;
+  }
+}
 const MOCK_WEB_PROGRESS = [
   {
     id: 'wk-water',
@@ -119,7 +148,7 @@ app.use(
 app.use(
   cors({
     origin(origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
+      if (isAllowedOrigin(origin)) {
         return callback(null, true);
       }
 

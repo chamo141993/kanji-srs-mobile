@@ -90,7 +90,30 @@ From the project directory:
 npm install
 ```
 
-### 2. Start the Expo development server
+### 2. Configure frontend API access
+
+Copy the example env file and adjust it for your target backend:
+
+```bash
+cp .env.example .env
+```
+
+Frontend web/mobile API configuration uses Expo public env vars:
+
+- `EXPO_PUBLIC_API_BASE_URL`
+- `EXPO_PUBLIC_SYNC_BEARER_TOKEN`
+
+Examples:
+
+- local backend: `http://localhost:8080`
+- deployed backend: `https://kanji-backend-dtyx.onrender.com`
+
+The backend also supports CORS configuration through:
+
+- `CORS_ORIGIN` for exact allowed origins
+- `CORS_ORIGIN_SUFFIX` for allowed HTTPS hostname suffixes such as `onrender.com`
+
+### 3. Start the Expo development server
 
 ```bash
 npx expo start
