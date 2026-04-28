@@ -1,0 +1,17 @@
+# Week 4 Progress Report: Kanji SRS Application
+
+## What I Did
+This week, development on the Kanji SRS app was paused to conduct a peer security review and passive vulnerability assessment of a classmate's API Monitoring Dashboard project (`api.auxcon.dev`). I analyzed their GitHub repository, Docker Hub image (`auxcon/labwatch-api`), and live HTTP response headers to evaluate their security posture. 
+
+## Why I Did It That Way
+When conducting a vulnerability scan, passive footprinting (examining public repositories, observing network traffic, and analyzing HTTP headers) is the industry-standard first step. By inspecting their GET `/status` and POST `/cdn-cgi/rum` requests via browser developer tools, I could map their attack surface without running aggressive, active exploitation tools. I noticed they are heavily relying on Cloudflare to manage their traffic, but lack application-layer security headers (like Helmet would provide), which is a valuable finding for a peer audit.
+
+## How it Ties to the Learning Objectives
+
+-Describe how NAT works and the security benefits it provides: My header analysis revealed that the classmate's application routes entirely through Cloudflare (`Server: cloudflare`, `cf-ray`, and a remote address of `172.67.163.97`). Cloudflare acts as a massive reverse proxy, which functions conceptually similarly to Network Address Translation (NAT). It masks the true IP address of their origin server from the public internet. The security benefit here is that attackers cannot directly target their internal Docker container; all traffic must pass through the proxy's filtering rules first, hiding the internal architecture.
+
+-Describe the competing concerns about applying new patches and how those concerns might be resolved: Reviewing their Docker Hub image highlighted the patching dilemma. Because their app's sole purpose is to monitor uptime for other APIs, applying a new OS or Node.js patch to their container carries the risk of breaking their custom monitoring scripts, causing false-positive downtime alerts. In an enterprise, these competing concerns (security vs. availability) are resolved by testing the patched image in a staging environment before pushing it to the live production server.
+
+-Describe the purpose of configuration management within an enterprise network / CCB: The classmate's project consists of multiple moving parts: a Docker image, a GitHub repo, and a live web dashboard. This highlights the absolute necessity of strict Configuration Management (CM). If multiple developers were working on this API monitor, a Change Control Board (CCB) would be required to ensure that a configuration change (like modifying the CORS policy or updating a Docker dependency) doesn't inadvertently expose the server or break the dashboard's functionality. 
+
+-Describe the general approach to integrity management: Looking at their public Docker image raised questions about system integrity. In an enterprise environment pulling images from Docker Hub, simply trusting the `latest` tag is a vulnerability. Organizations use integrity-checking tools to verify the cryptographic hash (SHA-256 digest) of the container image before deployment. This ensures the image was not tampered with or victim to a supply chain attack between the developer's GitHub and the live server.
